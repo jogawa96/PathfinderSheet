@@ -12,12 +12,400 @@
 		<!-- THE STICKY INCLUDE WILL BE THE BIT THAT STICKS TO A CORNER -->
 		<?php include 'sticky.php';?>
 
-		<h1>Offence</h1>
+		<h1>Skills</h1>
 		<form>
-			<div class="offence">
-				<label>Initiative: </label>
-				<input type="text" name="init" id="init">
-			</div>
+			<table>
+				<tr>
+					<th>Skill</th>
+					<th>Total</th>
+					<th>Ability</th>
+					<th>Ranks</th>
+					<th>Class</th>
+					<th>Racial</th>
+					<th>Other</th>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="acrocheck" id="acrocheck"> </td>
+					<td>Acrobatics</td>
+					<td> <input type="text" class="skilltotal" name="acrototal" id="acrototal" readonly> </td>
+					<td> <input type="text" class="dexmod" name="acromod" id="acromod"</td>
+					<td> <input type="text" class="ranks" name="acroranks" id="acroranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="appraisecheck" id="appraisecheck"> </td>
+					<td>Appraise</td>
+					<td> <input type="text" class="skilltotal" name="appraisetotal" id="appraisetotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="appraisemod" id="appraisemod"></td>
+					<td> <input type="text" class="ranks" name="appraiseranks" id="appraiseranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="artistrycheck" id="artistrycheck"> </td>
+					<td>Artistry</td>
+					<td> <input type="text" class="skilltotal" name="artistrytotal" id="artistrytotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="artistrymod" id="artistrymod"></td>
+					<td> <input type="text" class="ranks" name="artistryranks" id="artistryranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="autocheck" id="autocheck"> </td>
+					<td>Autohypnosis</td>
+					<td> <input type="text" class="skilltotal" name="autototal" id="autototal" readonly> </td>
+					<td> <input type="text" class="wismod" name="automod" id="automod"></td>
+					<td> <input type="text" class="ranks" name="autoranks" id="autoranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="bluffcheck" id="bluffcheck"> </td>
+					<td>Bluff</td>
+					<td> <input type="text" class="skilltotal" name="blufftotal" id="blufftotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="bluffmod" id="bluffmod"></td>
+					<td> <input type="text" class="ranks" name="bluffranks" id="bluffranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="climbcheck" id="climbcheck"> </td>
+					<td>Climb</td>
+					<td> <input type="text" class="skilltotal" name="climbtotal" id="climbtotal" readonly> </td>
+					<td> <input type="text" class="strmod" name="climbmod" id="climbmod"></td>
+					<td> <input type="text" class="ranks" name="climbranks" id="climbranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="craftcheck" id="craftcheck"> </td>
+					<td>Craft</td>
+					<td> <input type="text" class="skilltotal" name="crafttotal" id="crafttotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="craftmod" id="craftmod"></td>
+					<td> <input type="text" class="ranks" name="craftranks" id="craftranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="dipcheck" id="dipcheck"> </td>
+					<td>Diplomacy</td>
+					<td> <input type="text" class="skilltotal" name="diptotal" id="diptotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="dipmod" id="dipmod"></td>
+					<td> <input type="text" class="ranks" name="dipranks" id="dipranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="ddcheck" id="ddcheck"> </td>
+					<td>Disable Device</td>
+					<td> <input type="text" class="skilltotal" name="ddtotal" id="ddtotal" readonly> </td>
+					<td> <input type="text" class="dexmod" name="ddmod" id="ddmod"></td>
+					<td> <input type="text" class="ranks" name="ddranks" id="ddranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="disguisecheck" id="disguisecheck"> </td>
+					<td>Disguise</td>
+					<td> <input type="text" class="skilltotal" name="disguisetotal" id="disguisetotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="disguisemod" id="disguisemod"></td>
+					<td> <input type="text" class="ranks" name="disguiseranks" id="disguiseranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="eacheck" id="eacheck"> </td>
+					<td>Escape Artist</td>
+					<td> <input type="text" class="skilltotal" name="eatotal" id="eatotal" readonly> </td>
+					<td> <input type="text" class="dexmod" name="eamod" id="eamod"></td>
+					<td> <input type="text" class="ranks" name="earanks" id="earanks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="flycheck" id="flycheck"> </td>
+					<td>Fly</td>
+					<td> <input type="text" class="skilltotal" name="flytotal" id="flytotal" readonly> </td>
+					<td> <input type="text" class="dexmod" name="flymod" id="flymod"></td>
+					<td> <input type="text" class="ranks" name="flyranks" id="flyranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="hacheck" id="hacheck"> </td>
+					<td>Handle Animal</td>
+					<td> <input type="text" class="skilltotal" name="hatotal" id="hatotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="hamod" id="hamod"></td>
+					<td> <input type="text" class="ranks" name="haranks" id="haranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="healcheck" id="healcheck"> </td>
+					<td>Heal</td>
+					<td> <input type="text" class="skilltotal" name="healtotal" id="healtotal" readonly> </td>
+					<td> <input type="text" class="wismod" name="healmod" id="healmod"></td>
+					<td> <input type="text" class="ranks" name="healranks" id="healranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="intimcheck" id="intimcheck"> </td>
+					<td>Intimidate</td>
+					<td> <input type="text" class="skilltotal" name="intimtotal" id="intimtotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="intimmod" id="intimmod"></td>
+					<td> <input type="text" class="ranks" name="intimranks" id="intimranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="arcanacheck" id="arcanacheck"> </td>
+					<td>Knowledge (Arcana)</td>
+					<td> <input type="text" class="skilltotal" name="arcanatotal" id="arcanatotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="arcanamod" id="arcanamod"></td>
+					<td> <input type="text" class="ranks" name="arcanaranks" id="arcanaranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="dungeoncheck" id="dungeoncheck"> </td>
+					<td>Knowledge (Dungeoneering)</td>
+					<td> <input type="text" class="skilltotal" name="dungeontotal" id="dungeontotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="dungeonmod" id="dungeonmod"></td>
+					<td> <input type="text" class="ranks" name="dungeonranks" id="dungeonranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="engincheck" id="engincheck"> </td>
+					<td>Knowledge (Engineering)</td>
+					<td> <input type="text" class="skilltotal" name="engintotal" id="engintotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="enginmod" id="enginmod"></td>
+					<td> <input type="text" class="ranks" name="enginranks" id="enginranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="geocheck" id="geocheck"> </td>
+					<td>Knowledge (Geography)</td>
+					<td> <input type="text" class="skilltotal" name="geototal" id="geototal" readonly> </td>
+					<td> <input type="text" class="intmod" name="geomod" id="geomod"></td>
+					<td> <input type="text" class="ranks" name="georanks" id="georanks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="historycheck" id="historycheck"> </td>
+					<td>Knowledge (History)</td>
+					<td> <input type="text" class="skilltotal" name="historytotal" id="historytotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="historymod" id="historymod"></td>
+					<td> <input type="text" class="ranks" name="historyranks" id="historyranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="localcheck" id="localcheck"> </td>
+					<td>Knowledge (Local)</td>
+					<td> <input type="text" class="skilltotal" name="localtotal" id="localtotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="localmod" id="localmod"></td>
+					<td> <input type="text" class="ranks" name="localranks" id="localranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="nobilitycheck" id="nobilitycheck"> </td>
+					<td>Knowledge (Nobility)</td>
+					<td> <input type="text" class="skilltotal" name="nobilitytotal" id="nobilitytotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="nobilitymod" id="nobilitymod"></td>
+					<td> <input type="text" class="ranks" name="nobilityranks" id="nobilityranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="planescheck" id="planescheck"> </td>
+					<td>Knowledge (Planes)</td>
+					<td> <input type="text" class="skilltotal" name="planestotal" id="planestotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="planesmod" id="planesmod"></td>
+					<td> <input type="text" class="ranks" name="planesranks" id="planesranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="psicheck" id="psicheck"> </td>
+					<td>Knowledge (Psionics)</td>
+					<td> <input type="text" class="skilltotal" name="psitotal" id="psitotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="mod" id="mod"></td>
+					<td> <input type="text" class="ranks" name="psiranks" id="psiranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="relcheck" id="relcheck"> </td>
+					<td>Knowledge (Religion)</td>
+					<td> <input type="text" class="skilltotal" name="reltotal" id="reltotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="relmod" id="relmod"></td>
+					<td> <input type="text" class="ranks" name="relranks" id="relranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="lincheck" id="lincheck"> </td>
+					<td>Linguistics</td>
+					<td> <input type="text" class="skilltotal" name="lintotal" id="lintotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="linmod" id="linmod"></td>
+					<td> <input type="text" class="ranks" name="linranks" id="linranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="lorecheck" id="lorecheck"> </td>
+					<td>Lore</td>
+					<td> <input type="text" class="skilltotal" name="loretotal" id="loretotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="loremod" id="loremod"></td>
+					<td> <input type="text" class="ranks" name="loreranks" id="loreranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="perccheck" id="perccheck"> </td>
+					<td>Perception</td>
+					<td> <input type="text" class="skilltotal" name="perctotal" id="perctotal" readonly> </td>
+					<td> <input type="text" class="wismod" name="percmod" id="percmod"></td>
+					<td> <input type="text" class="ranks" name="percranks" id="percranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="performcheck" id="performcheck"> </td>
+					<td>Perform</td>
+					<td> <input type="text" class="skilltotal" name="performtotal" id="performtotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="performmod" id="performmod"></td>
+					<td> <input type="text" class="ranks" name="performranks" id="performranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="profcheck" id="profcheck"> </td>
+					<td>Profession</td>
+					<td> <input type="text" class="skilltotal" name="proftotal" id="proftotal" readonly> </td>
+					<td> <input type="text" class="wismod" name="profmod" id="profmod"></td>
+					<td> <input type="text" class="ranks" name="profranks" id="profranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="ridecheck" id="ridecheck"> </td>
+					<td>Ride</td>
+					<td> <input type="text" class="skilltotal" name="ridetotal" id="ridetotal" readonly> </td>
+					<td> <input type="text" class="dexmod" name="ridemod" id="ridemod"></td>
+					<td> <input type="text" class="ranks" name="rideranks" id="rideranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="smcheck" id="smcheck"> </td>
+					<td>Sense Motive</td>
+					<td> <input type="text" class="skilltotal" name="smtotal" id="smtotal" readonly> </td>
+					<td> <input type="text" class="wismod" name="smmod" id="smmod"></td>
+					<td> <input type="text" class="ranks" name="smranks" id="smranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="sohcheck" id="sohcheck"> </td>
+					<td>Sleight of Hand</td>
+					<td> <input type="text" class="skilltotal" name="sohtotal" id="sohtotal" readonly> </td>
+					<td> <input type="text" class="dexmod" name="sohmod" id="sohmod"></td>
+					<td> <input type="text" class="ranks" name="sohranks" id="sohranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="sccheck" id="sccheck"> </td>
+					<td>Spellcraft</td>
+					<td> <input type="text" class="skilltotal" name="sctotal" id="sctotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="scmod" id="scmod"></td>
+					<td> <input type="text" class="ranks" name="scranks" id="scranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="stealthcheck" id="stealthcheck"> </td>
+					<td>Stealth</td>
+					<td> <input type="text" class="skilltotal" name="stealthtotal" id="stealthtotal" readonly> </td>
+					<td> <input type="text" class="dexmod" name="stealthmod" id="stealthmod"></td>
+					<td> <input type="text" class="ranks" name="stealthranks" id="stealthranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="survcheck" id="survcheck"> </td>
+					<td>Survival</td>
+					<td> <input type="text" class="skilltotal" name="survtotal" id="survtotal" readonly> </td>
+					<td> <input type="text" class="wismod" name="survmod" id="survmod"></td>
+					<td> <input type="text" class="ranks" name="survranks" id="survranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="swimcheck" id="swimcheck"> </td>
+					<td>Swim</td>
+					<td> <input type="text" class="skilltotal" name="swimtotal" id="swimtotal" readonly> </td>
+					<td> <input type="text" class="strmod" name="swimmod" id="swimmod"></td>
+					<td> <input type="text" class="ranks" name="swimranks" id="swimranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="umdcheck" id="umdcheck"> </td>
+					<td>Use Magic Device</td>
+					<td> <input type="text" class="skilltotal" name="umdtotal" id="umdtotal" readonly> </td>
+					<td> <input type="text" class="chamod" name="umdmod" id="umdmod"></td>
+					<td> <input type="text" class="ranks" name="umdranks" id="umdranks"> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+			</table>
 		</form>
 	</body>
 </html>

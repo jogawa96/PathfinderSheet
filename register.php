@@ -4,15 +4,13 @@
 <html>
     <head>
         <title>Sign Up</title>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         <link rel="stylesheet" href="styles.css">
-=======
+
         <link rel="stylesheet" href="test.css">
->>>>>>> 71b26f6ea1e8bc869328204c3beb7b066e6bf89b
-=======
+
         <link rel="stylesheet" href="test.css">
->>>>>>> 71b26f6ea1e8bc869328204c3beb7b066e6bf89b
+
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     </head>
 

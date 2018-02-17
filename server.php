@@ -1,5 +1,5 @@
 <?php
-require_once "config.php";
+require_once "../config.php";
 
 session_start();
 
@@ -9,7 +9,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database (need database info here) 
-$db = mysqli_connect('DB_SERVER', 'DB_USERNAME', 'DB_PASSWORD', 'DB_NAME');
+$db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 // register a user
 if (isset($_POST['register'])) {

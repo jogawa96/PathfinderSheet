@@ -14,9 +14,17 @@
 
 		<h1>Feats</h1>
 		<form>
-			<div class="feats">
+			<div class="features">
 				<label>Feats</label>
 				<textarea name="feats" id="feats"></textarea>
+			</div>
+			<div class="racefeatures">
+				<label>Race Features</label>
+				<textarea name="racefeatures" id="racefeatures"></textarea>
+			</div>
+			<div class="classfeatures">
+				<label>Class Features</label>
+				<textarea name="classfeatures" id="classfeatures"></textarea>
 			</div>
 		</form>
 	</body>

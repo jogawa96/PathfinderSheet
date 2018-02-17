@@ -1,6 +1,6 @@
 html
 {
-	background-image: url("/images/background.jpg");
+	background-image: url("background.jpg");
 	display: flex;
 	justify-content: center;
 	font-family: 'Dosis', sans-serif;

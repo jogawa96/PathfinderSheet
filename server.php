@@ -80,5 +80,14 @@ if (isset($_POST['login_user'])) {
         }
     }
   }
+
+  if(isset($_POST['create_character'])){
+    $query = "INSERT INTO character (idusers) VALUES (SELECT userid WHERE username = $username)";
+    if ($conn->query($sql) === TRUE) {
+      echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+  }
   
   ?>

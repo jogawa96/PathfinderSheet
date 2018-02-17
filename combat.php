@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Pathfinder Character Sheet</title>
 		<link rel="stylesheet" href="/css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	</head>
 
 	<body>
@@ -60,6 +61,7 @@
 			<div class="defence save">
 				<label>Fortitude: </label>
 				<input type="text" name="fort" id="fort" readonly>
+				<span> = </span>
 				<input type="text" name="basefort" id="basefort">
 				<label>Base</label>
 				<input type="text" name="conmod" id="conmod" readonly>
@@ -70,6 +72,7 @@
 			<div class="defence save">
 				<label>Reflex: </label>
 				<input type="text" name="ref" id="ref" readonly>
+				<span> = </span>
 				<input type="text" name="baseref" id="baseref">
 				<label>Base</label>
 				<input type="text" name="dexmod" id="dexmod" readonly>
@@ -80,6 +83,7 @@
 			<div class="defence save">
 				<label>Will: </label>
 				<input type="text" name="will" id="will" readonly>
+				<span> = </span>
 				<input type="text" name="basewill" id="basewill">
 				<label>Base</label>
 				<input type="text" name="wismod" id="wismod" readonly>

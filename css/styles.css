@@ -3,6 +3,7 @@ html
 	background-image: url("/images/background.jpg");
 	display: flex;
 	justify-content: center;
+	font-family: 'Dosis', sans-serif;
 }
 
 body
@@ -10,18 +11,12 @@ body
 	width: 60vw;
 }
 
+/*NAVIGATION*/
 nav
 {
 	background-color: #c49b74;
-
 	margin-bottom: 2vw;
-
-	padding-top: 0.25vw;
-	padding-right: 0.5vw;
-	padding-bottom: 0.25vw;
-	padding-left: 0.5vw;
-
-	font-size: 1.5vw;
+	font-size: 2vw;
 }
 
 nav > ul
@@ -29,15 +24,122 @@ nav > ul
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	padding: 0;
 }
 
 .tab
 {
-	padding-left: 1vw;
-	padding-right: 1vw;
+	padding-left: 2.2vw;
+	padding-right: 2.2vw;
 }
 
+
+/*STICKY BIT*/
+aside
+{
+	border: 1px solid black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 18vw;
+}
+
+aside > form
+{
+	width: 18vw;
+}
+
+.sidestat, div
+{
+	display: block;
+}
+
+.sidestat > label
+{
+	font-size: 1.5vw;
+}
+
+.sidephysical, .sidemental
+{
+	display: block;
+}
+
+.sidephysical > .sidestat, .sidemental > .sidestat, .sidehealth > .sidestat
+{
+	display: inline;
+}
+
+/*MAIN PAGE*/
+h1 { text-align: center; }
+
+/*STATBLOCK*/
+
+.stat
+{
+	display: inline;
+}
+
+.mentalstats, .physicalstats, .stat > label, .stat > input
+{
+	display: block;
+}
+
+/*FORMS*/
+
+form
+{
+	font-size: 1.7vw;
+}
+
+/*INPUT FIELDS*/
 input, textarea
 {
 	background: transparent;
 }
+
+textarea
+{
+	width: 60vw;
+	height: 50vh;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5vw;
+}
+
+input
+{
+	width: 2.5vw;
+	height: 2vw;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5vw;
+}
+
+.info > input
+{
+	width: 10vw;
+}
+
+/*CHARACTER INFO PAGE*/
+
+.charinfo
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.info { margin: 10px; }
+
+.info > label, .info > input { display: block; }
+
+.info > label
+{
+	width: 100%;
+	text-align: center;
+}
+
+#charname { width: 15vw; }
+
+#charsize, #charage { width: 3vw; }
+
+#chargender, #charalign { width: 7vw; }

@@ -2,7 +2,7 @@
 
 html
 {
-	background-image: url("background.jpg");
+	background-image: url("/PathfinderSheet/images/background.jpg");
 	display: flex;
 	justify-content: center;
 	font-family: 'Dosis', sans-serif;
@@ -73,18 +73,6 @@ aside > form
 
 /*MAIN PAGE*/
 h1 { text-align: center; }
-
-/*STATBLOCK*/
-
-.stat
-{
-	display: inline;
-}
-
-.mentalstats, .physicalstats, .stat > label, .stat > input
-{
-	display: block;
-}
 
 /*FORMS*/
 

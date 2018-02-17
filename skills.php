@@ -16,6 +16,7 @@
 		<form>
 			<table>
 				<tr>
+					<th></th>
 					<th>Skill</th>
 					<th>Total</th>
 					<th>Ability</th>

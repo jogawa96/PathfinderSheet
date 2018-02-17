@@ -5,5 +5,7 @@
 		<li><a href="defence.php">Defence</a></li>
 		<li><a href="skills.php">Skills</a></li>
 		<li><a href="inventory.php">Inventory</a></li>
+		<li><a href="feats.php">Feats</a></li>
+		<li><a href="special.php">Special Abilities</a></li>
 	</ul>
 </nav>

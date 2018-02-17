@@ -22,7 +22,8 @@
 				<label>Silver</label>
 			</div>
 			<div class="inventory">
-				<label
+				<h2>Inventory</h2>
+				<textarea></textarea>
 			</div>
 		</form>
 	</body>

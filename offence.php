@@ -8,6 +8,8 @@
 	<body>
 
 		<?php include 'nav.php';?>
+
+		<!-- THE STICKY INCLUDE WILL BE THE BIT THAT STICKS TO A CORNER -->
 		<?php include 'sticky.php';?>
 
 		<h1>Offence</h1>

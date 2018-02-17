@@ -15,5 +15,8 @@
 		<h1>Character Information</h1>
 		<?php include "basic.php";?>
 		<?php include "statblock.php";?>
+		<script src="updatestats.js"></script>
+
 	</body>
+
 </html>

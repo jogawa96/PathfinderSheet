@@ -9,6 +9,7 @@
 
 		<?php include 'nav.php';?>
 
+		<h1>Character Information</h1>
 		<form>	
 			<div class="info">
 				<label>Name: </label>

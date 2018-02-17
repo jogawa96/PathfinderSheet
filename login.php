@@ -1,9 +1,9 @@
-
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
-  <link href="test.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="test.css">
 </head>
 <body>
   <div class="header">
@@ -11,7 +11,7 @@
   </div>
 	 
   <form method="post" action="login.php">
-  	<?php include('errors.php'); ?> <!-- show errors -->
+  	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
   		<input type="text" name="username" >

@@ -1,6 +1,9 @@
-// home page!
+
 <html>
-    <head><title>Home Page</title></head>
+    <head>
+		<title>Home Page</title>
+		<link href="test.css" rel="stylesheet" />
+	</head>
 
 <?php 
   session_start(); 

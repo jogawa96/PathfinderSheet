@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     $username = "";
     $email = "";
     $errors = array();
@@ -33,6 +33,10 @@
             $password = md5($pass1);
             $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')"
             mysqli_query($db, $sql);
+            $_SESSION['username'] = $username;
+            $_SESSION['sucess'] = "You are now logged in.";
+            header('location: index.php'); // home page
         }
+
     }
 ?>

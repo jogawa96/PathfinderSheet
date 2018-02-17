@@ -1,0 +1,43 @@
+html
+{
+	background-image: url("/images/background.jpg");
+	display: flex;
+	justify-content: center;
+}
+
+body
+{
+	width: 60vw;
+}
+
+nav
+{
+	background-color: #c49b74;
+
+	margin-bottom: 2vw;
+
+	padding-top: 0.25vw;
+	padding-right: 0.5vw;
+	padding-bottom: 0.25vw;
+	padding-left: 0.5vw;
+
+	font-size: 1.5vw;
+}
+
+nav > ul
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.tab
+{
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+input, textarea
+{
+	background: transparent;
+}

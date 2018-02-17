@@ -72,18 +72,6 @@ aside > form
 /*MAIN PAGE*/
 h1 { text-align: center; }
 
-/*STATBLOCK*/
-
-.stat
-{
-	display: inline;
-}
-
-.mentalstats, .physicalstats, .stat > label, .stat > input
-{
-	display: block;
-}
-
 /*FORMS*/
 
 form
@@ -143,3 +131,8 @@ input
 #charsize, #charage { width: 3vw; }
 
 #chargender, #charalign { width: 7vw; }
+
+.statblock
+{
+	font-size: 1vw;
+}

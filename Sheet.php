@@ -54,74 +54,120 @@
 				<label>Eye Colour: </label>
 				<input type="text" name="chareyes" id="chareyes">
 			</div>
+		</form>
 
-			<div class="statblock">
-				<div class="physicalstats"
-					<div class="stat">
-						<label>STR</label>
-						<input type="text" name="strscore" id="strscore">
-						<label>Mod</label>
-						<input type="text" name="strmod" id="strmod" readonly>
-						<label>Temp</label>
-						<input type="text" name="strtemp" id="strtemp">
-						<label>Mod</label>
-						<input type="text" name="strtempmod" id="strtempmod">
-					</div>
-					<div class="stat">
-						<label>DEX</label>
-						<input type="text" name="dexscore" id="dexscore">
-						<label>Mod</label>
-						<input type="text" name="dexmod" id="dexmod" readonly>
-						<label>Temp</label>
-						<input type="text" name="dextemp" id="dextemp">
-						<label>Mod</label>
-						<input type="text" name="dextempmod" id="dextempmod">
-					</div>
-					<div class="stat">
-						<label>CON</label>
-						<input type="text" name="conscore" id="conscore">
-						<label>Mod</label>
-						<input type="text" name="conmod" id="conmod" readonly>
-						<label>Temp</label>
-						<input type="text" name="contemp" id="contemp">
-						<label>Mod</label>
-						<input type="text" name="contempmod" id="contempmod">
-					</div>
+		<form class="statblock">
+			<div class="stat">
+				<div class="entry">
+					<input type="text" name="strscore" id="strscore">
+					<label>STR</label>
 				</div>
-				<div class="mentalstats">
-					<div class="stat">
-						<label>INT</label>
-						<input type="text" name="intscore" id="intscore">
-						<label>Mod</label>
-						<input type="text" name="intmod" id="intmod" readonly>
-						<label>Temp</label>
-						<input type="text" name="inttemp" id="inttemp">
-						<label>Mod</label>
-						<input type="text" name="inttempmod" id="inttempmod">
+				<div class="entry">
+					<input type="text" name="strmod" id="strmod">
+					<label>Mod</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="strtemp" id="strtemp">
+					<label>Temp</label>
 					</div>
-					<div class="stat">
-						<label>WIS</label>
-						<input type="text" name="wisscore" id="wisscore">
-						<label>Mod</label>
-						<input type="text" name="wismod" id="wismod" readonly>
-						<label>Temp</label>
-						<input type="text" name="wistemp" id="wistemp">
-						<label>Mod</label>
-						<input type="text" name="wistempmod" id="wistempmod">
-					</div>
-					<div class="stat">
-						<label>CHA</label>
-						<input type="text" name="chascore" id="chascore">
-						<label>Mod</label>
-						<input type="text" name="chamod" id="chamod" readonly>
-						<label>Temp</label>
-						<input type="text" name="chatemp" id="chatemp">
-						<label>Mod</label>
-						<input type="text" name="chatempmod" id="chatempmod">
-					</div>
+				<div class="entry">
+					<input type="text" name="strtempmod" id="strtempmod">
+					<label>Mod</label>
 				</div>
 			</div>
+			<div class="stat">
+				<div class="entry">
+					<input type="text" name="dexscore" id="dexscore">
+					<label>DEX</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="dexmod" id="dexmod">
+					<label>Mod</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="dextemp" id="dextemp">
+					<label>Temp</label>
+					</div>
+				<div class="entry">
+					<input type="text" name="dextempmod" id="dextempmod">
+					<label>Mod</label>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="entry">
+					<input type="text" name="conscore" id="conscore">
+					<label>CON</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="conmod" id="conmod">
+					<label>Mod</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="contemp" id="contemp">
+					<label>Temp</label>
+					</div>
+				<div class="entry">
+					<input type="text" name="contempmod" id="contempmod">
+					<label>Mod</label>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="entry">
+					<input type="text" name="intscore" id="intscore">
+					<label>INT</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="intmod" id="intmod">
+					<label>Mod</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="inttemp" id="inttemp">
+					<label>Temp</label>
+					</div>
+				<div class="entry">
+					<input type="text" name="inttempmod" id="inttempmod">
+					<label>Mod</label>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="entry">
+					<input type="text" name="wisscore" id="wisscore">
+					<label>WIS</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="wismod" id="wismod">
+					<label>Mod</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="wistemp" id="wistemp">
+					<label>Temp</label>
+					</div>
+				<div class="entry">
+					<input type="text" name="wistempmod" id="wistempmod">
+					<label>Mod</label>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="entry">
+					<input type="text" name="chascore" id="chascore">
+					<label>CHA</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="chamod" id="chamod">
+					<label>Mod</label>
+				</div>
+				<div class="entry">
+					<input type="text" name="chatemp" id="chatemp">
+					<label>Temp</label>
+					</div>
+				<div class="entry">
+					<input type="text" name="chatempmod" id="chatempmod">
+					<label>Mod</label>
+				</div>
+			</div>
+		</form>
 
+		<form class="backstory">
 			<div class="info">
 				<label>Backstory</label>
 				<textarea name="backstory" id="backstory"></textarea>

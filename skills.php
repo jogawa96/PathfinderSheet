@@ -236,6 +236,16 @@
 					<td> <input type="text" class="other" name="localother" id="localother"> </td>
 				</tr>
 				<tr class="skill">
+					<td> <input type="checkbox" class="classskill" name="martialcheck" id="martialcheck"> </td>
+					<td>Knowledge (Martial)</td>
+					<td> <input type="text" class="skilltotal" name="martialtotal" id="martialtotal" readonly> </td>
+					<td> <input type="text" class="intmod" name="martialmod" id="martialmod"></td>
+					<td> <input type="text" class="ranks" name="martialranks" id="martialranks"> </td>
+					<td> <input type="text" class="clskill" name="martialthree" id="martialthree"></td>
+					<td> <input type="text" class="racial" name="martialrace" id="martialrace"> </td>
+					<td> <input type="text" class="other" name="martialother" id="martialother"> </td>
+				</tr>
+				<tr class="skill">
 					<td> <input type="checkbox" class="classskill" name="nobilitycheck" id="nobilitycheck"> </td>
 					<td>Knowledge (Nobility)</td>
 					<td> <input type="text" class="skilltotal" name="nobilitytotal" id="nobilitytotal" readonly> </td>

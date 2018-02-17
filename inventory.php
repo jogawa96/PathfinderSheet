@@ -23,7 +23,7 @@
 			</div>
 			<div class="inventory">
 				<h2>Inventory</h2>
-				<textarea></textarea>
+				<textarea name="bag" id="bag"></textarea>
 			</div>
 		</form>
 	</body>

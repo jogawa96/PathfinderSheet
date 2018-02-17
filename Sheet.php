@@ -54,7 +54,7 @@
 			</div>
 			<div class="info">
 				<label>Backstory</label>
-				<textarea></textarea>
+				<textarea name="backstory" id="backstory"></textarea>
 		</form>
 	</body>
 </html>

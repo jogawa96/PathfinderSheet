@@ -81,7 +81,7 @@ if (isset($_POST['login_user'])) {
     }
   }
 
-  if (isset($_POST['login_user'])) {
+  if (isset($_POST['create_character'])) {
 
     $sql = "SELECT userid FROM users WHERE username = $username";
     $result = $conn->query($sql);

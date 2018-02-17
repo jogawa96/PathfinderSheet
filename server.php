@@ -91,18 +91,6 @@ if (isset($_POST['login_user'])) {
             VALUES('$username')";
            mysqli_query($db, $query);
         header('location: sheet.php');
-    }
-
-  if (isset($_POST['create_character'])) {
-
-    $sql = "SELECT userid FROM users WHERE username = $username";
-    $result = $conn->query($sql);
-
-    if ($conn->query($sql) === TRUE) {
-      echo "New character created successfully";
-    } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-  }
+      }
   
   ?>

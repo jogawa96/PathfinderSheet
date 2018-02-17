@@ -1,4 +1,6 @@
 <?php
+require_once "config.php";
+
 session_start();
 
 // initializing variables
@@ -7,7 +9,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database (need database info here) 
-$db = mysqli_connect('69.89.31.103', 'urcscon2_dicey', 'dandyhacks', 'urcscon2_dicey');
+$db = mysqli_connect('DB_SERVER', 'DB_USERNAME', 'DB_PASSWORD', 'DB_NAME');
 
 // register a user
 if (isset($_POST['register'])) {

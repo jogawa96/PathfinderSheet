@@ -25,7 +25,7 @@
 					<label>Armour</label>
 					<input type="text" name="acshield" id="acshield">
 					<label>Shield</label>
-					<input type="text" name="acdex" id="acdex">
+					<input type="text" name="acdex" id="acdex" readonly>
 					<label>Dexterity</label>
 					<input type="text" name="acsize" id="acsize">
 					<label>Size</label>
@@ -53,7 +53,7 @@
 				<label>BAB</label>
 				<input type="text" name="cmdstr" id="cmdstr">
 				<label>STR</label>
-				<input type="text" name="cmddex" id="cmddex">
+				<input type="text" name="cmddex" id="cmddex" readonly>
 				<label>DEX</label>
 				<input type="text" name="cmdsize" id="cmdsize">
 				<label>Size</label>
@@ -116,5 +116,6 @@
 					<input type="text" name="special1" id="special1">
 				</div>
 		</form>
+		<script src="updatedef.js"></script>
 	</body>
 </html>

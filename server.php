@@ -81,10 +81,13 @@ if (isset($_POST['login_user'])) {
     }
   }
 
-  if(isset($_POST['create_character'])){
-    $query = "INSERT INTO character (idusers) VALUES (SELECT userid WHERE username = $username)";
+  if (isset($_POST['login_user'])) {
+
+    $sql = "SELECT userid FROM users WHERE username = $username";
+    $result = $conn->query($sql);
+
     if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
+      echo "New character created successfully";
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }

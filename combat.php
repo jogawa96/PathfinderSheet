@@ -33,14 +33,16 @@
 					<label>Natural</label>
 					<input type="text" name="acdeflection" id="acdeflection">
 					<label>Deflection</label>
+					<input type="text" name="acdodge" id="acdodge">
+					<label>Dodge</label>
 					<input type="text" name="acother" id="acother">
 					<label>Other</label>
 				</div>
-				<div id="actouch">
+				<div id="touch">
 					<label>Touch: </label>
 					<input type="text" name="actouch" id="actouch" readonly>
 				</div>
-				<div id="acflat">
+				<div id="touch">
 					<label>Flat-Footed: </label>
 					<input type="text" name="acflat" id="acflat" readonly>
 				</div>

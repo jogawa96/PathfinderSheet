@@ -7,15 +7,7 @@
 
 	<body>
 
-		<nav>
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Offence</a></li>
-				<li><a href="">Defence</a></li>
-				<li><a href="">Skills</a></li>
-				<li><a href="">Inventory</a></li>
-			</ul>
-		</nav>
+		<?php include 'nav.php';?>
 
 		<form>	
 			<div class="info">

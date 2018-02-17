@@ -1,6 +1,6 @@
 html
 {
-	background-image: url("/PathfinderSheet/images/background.jpg");
+	background-image: url("/images/background.jpg");
 	display: flex;
 	justify-content: center;
 	font-family: 'Dosis', sans-serif;
@@ -131,3 +131,26 @@ input
 #charsize, #charage { width: 3vw; }
 
 #chargender, #charalign { width: 7vw; }
+
+.physical, .mental
+{
+	display: flex;
+}
+
+.entry
+{
+	display: inline;
+}
+
+.stat
+{
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+}
+
+.field > input, .field > label
+{
+	display: block;
+	margin: 0;
+}

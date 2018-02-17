@@ -2,15 +2,7 @@
 <html>
     <head>
 		<title>Home Page</title>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		<link rel="stylesheet" href="PathfinderSheet/css/styles.css">
-=======
-		<link rel="stylesheet" href="test.css">
->>>>>>> 71b26f6ea1e8bc869328204c3beb7b066e6bf89b
-=======
-		<link rel="stylesheet" href="test.css">
->>>>>>> 71b26f6ea1e8bc869328204c3beb7b066e6bf89b
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	</head>
 
@@ -56,6 +48,7 @@
     	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
     	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
     <?php endif ?>
+    <button type="button">Create New Character</button>
 </div>
 		
 </body>

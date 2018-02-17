@@ -15,7 +15,7 @@
 		<h1>Offence</h1>
 		<form>
 			<div class="offence">
-				<label>Inititive: </label>
+				<label>Initiative: </label>
 				<input type="text" name="init" id="init">
 			</div>
 			<div class="offence">

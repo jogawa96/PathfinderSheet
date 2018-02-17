@@ -13,12 +13,12 @@
 		<?php include 'sticky.php';?>
 
 		<h1>Defence</h1>
-		<form>
-			<div class="defence">
+		<form> 
+			<div class="defence ac">
 				<div id="acnormal">
 					<label>AC: </label>
 					<input type="text" name="ac" id="ac" readonly>
-					<span>= 10 + </span>
+					<span> = 10 + </span>
 					<input type="text" name="acarmour" id="acarmour">
 					<label>Armour</label>
 					<input type="text" name="acshield" id="acshield">
@@ -43,10 +43,10 @@
 					<input type="text" name="acflat" id="acflat" readonly>
 				</div>
 			</div>
-			<div class="defence">
+			<div class="defence cmd">
 				<label>CMD: </label>
 				<input type="text" name="cmd" id="cmd" readonly>
-				<span>= 10 + </span>
+				<span> = 10 + </span>
 				<input type="text" name="cmdbab" id="cmdbab">
 				<label>BAB</label>
 				<input type="text" name="cmdstr" id="cmdstr">
@@ -56,17 +56,35 @@
 				<input type="text" name="cmdsize" id="cmdsize">
 				<label>Size</label>
 			</div>
-			<div class="defence">
-				<label></label>
-				<input type="text" name="" id="">
+			<div class="defence save">
+				<label>Fortitude: </label>
+				<input type="text" name="fort" id="fort" readonly>
+				<input type="text" name="basefort" id="basefort">
+				<label>Base</label>
+				<input type="text" name="conmod" id="conmod" readonly>
+				<label>CON</label>
+				<input type="text" name="fortother" id="fortother">
+				<label>Other</label>
 			</div>
-			<div class="defence">
-				<label></label>
-				<input type="text" name="" id="">
+			<div class="defence save">
+				<label>Reflex: </label>
+				<input type="text" name="ref" id="ref" readonly>
+				<input type="text" name="baseref" id="baseref">
+				<label>Base</label>
+				<input type="text" name="dexmod" id="dexmod" readonly>
+				<label>DEX</label>
+				<input type="text" name="refother" id="refother">
+				<label>Other</label>
 			</div>
-			<div class="defence">
-				<label></label>
-				<input type="text" name="" id="">
+			<div class="defence save">
+				<label>Will: </label>
+				<input type="text" name="will" id="will" readonly>
+				<input type="text" name="basewill" id="basewill">
+				<label>Base</label>
+				<input type="text" name="wismod" id="wismod" readonly>
+				<label>WIS</label>
+				<input type="text" name="willother" id="willother">
+				<label>Other</label>
 			</div>
 		</form>
 	</body>

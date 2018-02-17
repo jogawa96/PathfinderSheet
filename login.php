@@ -3,13 +3,8 @@
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
-
+	<link rel="stylesheet" href="test.css">
 	<link rel="stylesheet" href="styles.css">
-
-  <link rel="stylesheet" href="test.css">
-
-  <link rel="stylesheet" href="test.css">
-
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 <body>

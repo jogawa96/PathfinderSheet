@@ -14,5 +14,11 @@
 			<label>CHA</label>
 			<input type="text" name="sidecha" id="sidecha" readonly>
 		</div>
+		<div>
+			<label>HP: </label>
+			<input type="text" name="sidehp" id="sidehp" readonly>
+			<label>Damage: </label>
+			<input type="text" name="sidedamage" id="sidedamage">
+		</div>
 	</form>
 </aside>

@@ -2,13 +2,9 @@
 <html>
     <head>
 		<title>Home Page</title>
-<<<<<<< HEAD
-		<link rel="stylesheet" href="PathfinderSheet/css/styles.css">
-=======
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="test.css">
 		<link rel="stylesheet" href="test.css">
->>>>>>> cd4aadf089b3765c05022207edd4360bf4580541
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	</head>
 

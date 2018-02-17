@@ -8,6 +8,7 @@
 	<body>
 
 		<?php include 'nav.php';?>
+		<?php include 'sticky.php';?>
 
 		<h1>Character Information</h1>
 		<form>	

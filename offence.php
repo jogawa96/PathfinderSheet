@@ -8,6 +8,7 @@
 	<body>
 
 		<?php include 'nav.php';?>
+		<?php include 'sticky.php';?>
 
 		<h1>Offence</h1>
 		<form>
@@ -19,10 +20,18 @@
 				<label>Base Attack Bonus: </label>
 				<input type="text" name="bab" id="bab">
 			</div>
-			<div class="offence">
-				<label></label>
-				<input type="text" name="" id="">
-			</div>
+
+			<h2>Weapon Attacks</h2>
+				<div class="offence weaponattack">
+					<label>Weapon: </label>
+					<input type="text" name="weapon1" id="weapon1">
+					<label>Bonus: </label>
+					<input type="text" name="bonus1" id="bonus1">
+					<label>Damage: </label>
+					<input type="text" name="damage1" id="damage1">
+					<label>Special: </label>
+					<input type="text" name="special1" id="special1">
+				</div>
 		</form>
 	</body>
 </html>

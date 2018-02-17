@@ -1,6 +1,6 @@
 html
 {
-	background-image: url("/images/background.jpg");
+	background-image: url("/PathfinderSheet/images/background.jpg");
 	display: flex;
 	justify-content: center;
 	font-family: 'Dosis', sans-serif;
@@ -131,8 +131,3 @@ input
 #charsize, #charage { width: 3vw; }
 
 #chargender, #charalign { width: 7vw; }
-
-.statblock
-{
-	font-size: 1vw;
-}

@@ -1,21 +1,4 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Pathfinder Character Sheet</title>
-		<link rel="stylesheet" href="PathfinderSheet/css/styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-	</head>
-
-	<body>
-
-		<?php include 'nav.php';?>
-		<?php include 'sticky.php';?>
-
-		<h1>Character Information</h1>
-		<?php include "statblock.php";?>
-
-		<form class="charinfo">	
+<form class="charinfo">	
 			<div class="info">
 				<label>Name</label>
 				<input type="text" name="charname" id="charname">
@@ -56,10 +39,4 @@
 				<label>Eye Colour: </label>
 				<input type="text" name="chareyes" id="chareyes">
 			</div>
-			<div class="info">
-				<label>Backstory</label>
-				<textarea name="backstory" id="backstory"></textarea>
-			</div>
 		</form>
-	</body>
-</html>

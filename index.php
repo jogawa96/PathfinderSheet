@@ -2,7 +2,7 @@
 <html>
     <head>
 		<title>Home Page</title>
-		<link href="test.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/css/styles.css">
 	</head>
 
 <?php 

@@ -52,6 +52,10 @@
 	<?php endif ?>
 	<form method="post" action="index.php">
 	<div class="input-group">
+        <label>Character Name</label>
+        <input type="text" name="charname">
+    </div>
+	<div class="input-group">
   		<button type="submit" name="create" class="btn">Create Character</button>
 	</div>
 	</form>

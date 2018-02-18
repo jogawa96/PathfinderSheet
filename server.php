@@ -91,6 +91,7 @@ if (isset($_POST['login_user'])) {
      $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
      $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
      
+	 $_SESSION['strenthraw'] = $strengthraw;
      $_SESSION['character'] = $charname;
      $_SESSION['charismaraw'] = $charismaraw;
      $_SESSION['wisdomraw'] = $wisdomraw;

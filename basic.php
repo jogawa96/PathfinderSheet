@@ -1,5 +1,5 @@
-require "config.php"
 <?php
+require_once "../config.php";
 if (isset($_POST['charname'])) {
 	$setup = setUpDatabase();
 	mysqli_query($setup,"INSERT INTO `character` (`char_name`,`char_class`,`char_race`,`char_size`,`char_alignment`,`char_gender`,`char_age`,`char_height`,`char`char_hair`,`char_eye`,`char_bio`,`strength_raw`,`strength_temp`,`dexterity_raw`,`dexterity_temp`,`constitution_raw`,`constitution_temp`,`intel_raw`,`intel_temp`,`char_hair`,`char_eye`,`char_bio`,`strength_raw`,`strength_temp`,`dexterity_raw`,`dexterity_temp`,`constitution_raw`,`constitution_temp`,`intel_raw`,`intel_temp`,_hair`,`char_eye`,`char_bio`,`strength_raw`,`strength_temp`,`dexterity_raw`,`dexterity_temp`,`constitution_raw`,`constitution_temp`,`intel_raw`,`intel_temp`,`wisdom_raw`,`wisdom_temp`,`charisma_raw`,`charisma_temp`) VALUES ('"
@@ -23,8 +23,6 @@ if (isset($_POST['charname'])) {
 		."','"
 		.mysqli_real_escape_string($setup,$_POST["chareyes"])
 		."')") or die ("FAILURE AT QUERY 1: ".mysqli_error($setup));
-
-
 }
 end
 ?>

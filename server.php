@@ -90,8 +90,16 @@ if (isset($_POST['login_user'])) {
      $strengthraw = mysqli_real_escape_string($db, $_POST['strengthraw']);
      $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
      $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
+     
      $_SESSION['character'] = $charname;
-    
+     $_SESSION['charismaraw'] = $charismaraw;
+     $_SESSION['wisdomraw'] = $wisdomraw;
+     $_SESSION['intelraw'] = $intelraw;
+     $_SESSION['constitutionraw'] = $constitutionraw;
+     $_SESSION['dexterityraw'] = $dexterityraw;
+
+
+
       
       $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                   VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";

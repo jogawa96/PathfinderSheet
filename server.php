@@ -91,7 +91,7 @@ if (isset($_POST['login_user'])) {
      $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
      $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
      
-	 $_SESSION['strenthraw'] = $strengthraw;
+	   $_SESSION['strengthraw'] = $strengthraw;
      $_SESSION['character'] = $charname;
      $_SESSION['charismaraw'] = $charismaraw;
      $_SESSION['wisdomraw'] = $wisdomraw;
@@ -102,6 +102,7 @@ if (isset($_POST['login_user'])) {
       $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                   VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       mysqli_query($db, $query);
+      
 	}
 	  if (isset($_POST['Save'])) {
 		 $charlvl = mysqli_real_escape_string($db, $_POST['charlvl']);
@@ -116,10 +117,9 @@ if (isset($_POST['login_user'])) {
 	  
 	  $query = "UPDATE `characters` SET `char_level`=$charlvl,`char_race`=$charrace,`char_size`=$charsize,`char_alignment`=$charalign,
 	  `char_gender`=$chargender,`char_age`=$charage,`char_height`=$charheight,`char_hair`=$charhair,`char_eye`=$chareyes) 
-	  WHERE $charname=$_SESSION['character']";
+    WHERE $charname={$_SESSION['character']}";
       //$query = "INSERT INTO `characters` (`username`, `char_name`) VALUES ('{$_SESSION[username]}', '$charname')";
-      mysqli_query($db, $query)
-	  
+      mysqli_query($db, $query);
       header('location: combat.php');  
 	}
   ?>

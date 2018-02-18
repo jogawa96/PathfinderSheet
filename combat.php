@@ -14,35 +14,80 @@
 		<!-- THE STICKY INCLUDE WILL BE THE BIT THAT STICKS TO A CORNER -->
 		<?php include 'sticky.php';?>
 
+		<h1>Offence</h1>
+		<form>
+			<div class="offence">
+				<label>Initiative: </label>
+				<input type="text" name="init" id="init">
+			</div>
+			<div class="offence">
+				<label>Base Attack Bonus: </label>
+				<input type="text" name="bab" id="bab">
+			</div>
+
+			<h2>Weapon Attacks</h2>
+				<div class="offence weaponattack">
+					<label>Weapon: </label>
+					<input type="text" name="weapon1" id="weapon1">
+					<label>Bonus: </label>
+					<input type="text" name="bonus1" id="bonus1">
+					<label>Damage: </label>
+					<input type="text" name="damage1" id="damage1">
+					<label>Special: </label>
+					<input type="text" name="special1" id="special1">
+				</div>
+		</form>
+
 		<h1>Defence</h1>
 		<form> 
 			<div class="defence ac">
 				<div id="acnormal">
-					<label>AC: </label>
-					<input type="text" name="ac" id="ac" readonly>
-					<span> = 10 + </span>
-					<input type="text" name="acarmour" id="acarmour">
-					<label>Armour</label>
-					<input type="text" name="acshield" id="acshield">
-					<label>Shield</label>
-					<input type="text" name="acdex" id="acdex" readonly>
-					<label>Dexterity</label>
-					<input type="text" name="acsize" id="acsize">
-					<label>Size</label>
-					<input type="text" name="acnatural" id="acnatural">
-					<label>Natural</label>
-					<input type="text" name="acdeflection" id="acdeflection">
-					<label>Deflection</label>
-					<input type="text" name="acdodge" id="acdodge">
-					<label>Dodge</label>
-					<input type="text" name="acother" id="acother">
-					<label>Other</label>
+					<div class="comp">
+						<label id="total">AC: </label>
+						<input type="text" name="ac" id="ac" readonly>
+					</div>
+					<div class="comp">
+						<span> = 10 + </span>
+						<input class="hide" type="text" readonly>
+					</div>
+					<div class="comp">
+						<input type="text" name="acarmour" id="acarmour">
+						<label>Armour</label>
+					</div>
+					<div class="comp">	
+						<input type="text" name="acshield" id="acshield">
+						<label>Shield</label>
+					</div>
+					<div class="comp">	
+						<input type="text" name="acdex" id="acdex" readonly>
+						<label>Dex</label>
+					</div>
+					<div class="comp">	
+						<input type="text" name="acsize" id="acsize">
+						<label>Size</label>
+					</div>
+					<div class="comp">	
+						<input type="text" name="acnatural" id="acnatural">
+						<label>Natural</label>
+					</div>
+					<div class="comp">	
+						<input type="text" name="acdeflection" id="acdeflection">
+						<label>Deflection</label>
+					</div>
+					<div class="comp">	
+						<input type="text" name="acdodge" id="acdodge">
+						<label>Dodge</label>
+					</div>
+					<div class="comp">	
+						<input type="text" name="acother" id="acother">
+						<label>Other</label>
+					</div>
 				</div>
 				<div id="touch">
 					<label>Touch: </label>
 					<input type="text" name="actouch" id="actouch" readonly>
 				</div>
-				<div id="touch">
+				<div id="flat">
 					<label>Flat-Footed: </label>
 					<input type="text" name="acflat" id="acflat" readonly>
 				</div>
@@ -95,29 +140,6 @@
 			</div>
 		</form>
 
-		<h1>Offence</h1>
-		<form>
-			<div class="offence">
-				<label>Initiative: </label>
-				<input type="text" name="init" id="init">
-			</div>
-			<div class="offence">
-				<label>Base Attack Bonus: </label>
-				<input type="text" name="bab" id="bab">
-			</div>
-
-			<h2>Weapon Attacks</h2>
-				<div class="offence weaponattack">
-					<label>Weapon: </label>
-					<input type="text" name="weapon1" id="weapon1">
-					<label>Bonus: </label>
-					<input type="text" name="bonus1" id="bonus1">
-					<label>Damage: </label>
-					<input type="text" name="damage1" id="damage1">
-					<label>Special: </label>
-					<input type="text" name="special1" id="special1">
-				</div>
-		</form>
 		<script src="updatedef.js"></script>
 	</body>
 </html>

@@ -14,7 +14,8 @@ body
 /*NAVIGATION*/
 nav
 {
-	background-color: #c49b74;
+	/*background-color: #c49b74;*/
+	width: 100%;
 	margin-bottom: 2vw;
 	font-size: 2vw;
 }
@@ -39,7 +40,7 @@ aside
 {
 	border: 1px solid black;
 	position: fixed;
-	top: 0;
+	top: 5rem;
 	left: 0;
 	width: 18vw;
 }
@@ -212,5 +213,21 @@ td > input, #touch > input, #flat > input, .offence > input
 	font-weight: normal;
 }
 
+.wrapper
+{
+	display: flex;
+	justify-content: center;
+}
+
 /*SAVES*/
 
+.saves
+{
+	display: flex;
+	justify-content: center;
+}
+
+.save
+{
+	margin: 10px;
+}

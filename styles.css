@@ -157,7 +157,11 @@ input
 	text-align: center;
 }
 
-/*DEFENSE*/
+/*OFFENCE*/
+
+#weapon { width: 15vw; }
+
+/*DEFENCE*/
 
 .ac
 {
@@ -166,21 +170,34 @@ input
 
 #acnormal
 {
+	display: flex;
+	justify-content: center;
 	margin-bottom: 20px;
 }
 
-td > input, #touch > input, #flat > input
+#acother
+{
+	display: flex;
+	justify-content: center;
+}
+
+td > input, #touch > input, #flat > input, .offence > input
 {
 	width: 4.5vw;
 	height: 5vh;
 }
 
-#touch, #flat { display: inline; }
+#touch, #flat
+{
+	display: inline;
+	margin: 10px;
+}
 
 .labels > th
 {
 	font-size: 1.2vw;
 	text-align: center;
+	font-weight: normal;
 }
 
 /*.comp

@@ -15,7 +15,7 @@
 		<?php include 'sticky.php';?>
 
 		<h1>Offence</h1>
-		<form>
+		<form id="offence">
 			<div class="offence">
 				<label>Initiative: </label>
 				<input type="text" name="init" id="init">
@@ -28,13 +28,13 @@
 			<h2>Weapon Attacks</h2>
 				<div class="offence weaponattack">
 					<label>Weapon: </label>
-					<input type="text" name="weapon1" id="weapon1">
+					<input type="text" name="weapon" id="weapon">
 					<label>Bonus: </label>
-					<input type="text" name="bonus1" id="bonus1">
+					<input type="text" name="bonus" id="bonus">
 					<label>Damage: </label>
-					<input type="text" name="damage1" id="damage1">
+					<input type="text" name="damage" id="damage">
 					<label>Special: </label>
-					<input type="text" name="special1" id="special1">
+					<input type="text" name="special" id="special">
 				</div>
 		</form>
 
@@ -43,9 +43,9 @@
 			<div class="ac">
 				<table id="acnormal">
 					<tr>
-						<th>AC:</th>
+						<th>AC: </th>
 						<td> <input type="text" name="ac" id="ac" readonly> </td>
-						<td>= 10 +</td>
+						<td>= 10 + </td>
 						<td><input type="text" name="acarmour" id="acarmour"></td>
 						<td><input type="text" name="acshield" id="acshield"></td>
 						<td><input type="text" name="acdex" id="acdex" readonly></td>
@@ -69,29 +69,38 @@
 						<th>Other</th>
 					</tr>
 				</table>
-				<div id="touch">
-					<label>Touch: </label>
-					<input type="text" name="actouch" id="actouch" readonly>
-				</div>
-				<div id="flat">
-					<label>Flat-Footed: </label>
-					<input type="text" name="acflat" id="acflat" readonly>
+				<div id="acother">
+					<div id="touch">
+						<label>Touch: </label>
+						<input type="text" name="actouch" id="actouch" readonly>
+					</div>
+					<div id="flat">
+						<label>Flat-Footed: </label>
+						<input type="text" name="acflat" id="acflat" readonly>
+					</div>
 				</div>
 			</div>
 
-			<div class="cmd">
-				<label>CMD: </label>
-				<input type="text" name="cmd" id="cmd" readonly>
-				<span> = 10 + </span>
-				<input type="text" name="cmdbab" id="cmdbab">
-				<label>BAB</label>
-				<input type="text" name="cmdstr" id="cmdstr">
-				<label>STR</label>
-				<input type="text" name="cmddex" id="cmddex" readonly>
-				<label>DEX</label>
-				<input type="text" name="cmdsize" id="cmdsize">
-				<label>Size</label>
-			</div>
+			<table id="cmd">
+				<tr>
+					<th>CMD: </th>
+					<td><input type="text" name="cmd" id="cmd" readonly></td>
+					<td>10 + </td>
+					<td><input type="text" name="cmdbab" id="cmdbab"></td>
+					<td><input type="text" name="cmdstr" id="cmdstr"></td>
+					<td><input type="text" name="cmddex" id="cmddex"></td>
+					<td><input type="text" name="cmdsize" id="cmdsize"></td>
+				</tr>
+				<tr class="labels">
+					<th> </th>
+					<th> </th>
+					<th> </th>
+					<th>BAB</th>
+					<th>STR</th>
+					<th>DEX</th>
+					<th>Size</th>
+				</tr>
+			</table>
 
 			<div class="saves">
 				<div class="save">

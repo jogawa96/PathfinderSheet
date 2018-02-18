@@ -51,13 +51,13 @@
     	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
 	<?php endif ?>
 	<form method="post" action="index.php">
-	<div class="input-group">
-        <label>Character Name</label>
-        <input type="text" name="charname">
-    </div>
-	<div class="input-group">
-  		<button type="submit" name="create" class="btn">Create Character</button>
-	</div>
+		<div class="input-group">
+       		<label>Character Name</label>
+        	<input type="text" name="charname" value="<?php echo $charname?>;>
+    	</div>
+		<div class="input-group">
+  			<button type="submit" name="create" class="btn">Create Character</button>
+		</div>
 	</form>
 </div>
 		

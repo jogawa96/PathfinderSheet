@@ -91,23 +91,30 @@ if (isset($_POST['login_user'])) {
      $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
      $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
      
-	   $_SESSION['strengthraw'] = $strengthraw;
+	 $_SESSION['strenthraw'] = $strengthraw;
      $_SESSION['character'] = $charname;
      $_SESSION['charismaraw'] = $charismaraw;
      $_SESSION['wisdomraw'] = $wisdomraw;
      $_SESSION['intelraw'] = $intelraw;
      $_SESSION['constitutionraw'] = $constitutionraw;
      $_SESSION['dexterityraw'] = $dexterityraw;
-
-
-
       
       $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                   VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       
+	  if (isset($_POST['Save'])) {
+		 $charlvl = mysqli_real_escape_string($db, $_POST['charlvl']);
+		 $charrace = mysqli_real_escape_string($db, $_POST['charrace']);
+		 $charsize = mysqli_real_escape_string($db, $_POST['charsize']);
+		 $charalign = mysqli_real_escape_string($db, $_POST['charalign']);
+		 $chargender = mysqli_real_escape_string($db, $_POST['chargender']);
+		 $charage = mysqli_real_escape_string($db, $_POST['charage']);
+		 $charheight = mysqli_real_escape_string($db, $_POST['charheight']);
+		 $charhair = mysqli_real_escape_string($db, $_POST['charhair']);
+		 $chareyes = mysqli_real_escape_string($db, $_POST['chareyes']);
+	  }
       //$query = "INSERT INTO `characters` (`username`, `char_name`) VALUES ('{$_SESSION[username]}', '$charname')";
       mysqli_query($db, $query);
       header('location: combat.php');
       }
-  
   ?>

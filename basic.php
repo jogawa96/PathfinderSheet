@@ -4,7 +4,7 @@ require_once "../config.php";
 <form method="post" action="basic.php" class="charinfo">	
 			<div class="info">
 				<label>Name</label>
-				<input type="text" name="charname" id="charname" value=$_SESSION['character']>
+				<input type="text" name="charname" id="charname" value="<?php echo $_SESSION['character'];?>" readonly>
 			</div>
 			<div class="info">
 				<label>Class + Level</label>

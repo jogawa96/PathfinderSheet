@@ -4,7 +4,7 @@
 		<div class="stat">
 			<div class="field">
 				<label>STR</label>
-				<input type="text" name="strscore" id="strscore" value="<?php echo $_SESSION['strengthraw'];?>" readonly>
+				<input type="text" name="strscore" id="strscore" value="<?php echo $_SESSION['strengthraw'];?>" >
 			</div>
 			<div class="field">
 				<label>Mod</label>
@@ -22,7 +22,7 @@
 		<div class="stat">
 			<div class="field">
 				<label>DEX</label>
-				<input type="text" name="dexscore" id="dexscore" value="<?php echo $_SESSION['dexterityraw'];?>" readonly>
+				<input type="text" name="dexscore" id="dexscore" value="<?php echo $_SESSION['dexterityraw'];?>" >
 			</div>
 			<div class="field">
 				<label>Mod</label>
@@ -40,7 +40,7 @@
 		<div class="stat">
 			<div class="field">
 				<label>CON</label>
-				<input type="text" name="conscore" id="conscore" value="<?php echo $_SESSION['constitutionraw'];?>" readonly>
+				<input type="text" name="conscore" id="conscore" value="<?php echo $_SESSION['constitutionraw'];?>" >
 			</div>
 			<div class="field">
 				<label>Mod</label>
@@ -60,7 +60,7 @@
 		<div class="stat">
 			<div class="field">
 				<label>INT</label>
-				<input type="text" name="intscore" id="intscore" value="<?php echo $_SESSION['intelraw'];?>" readonly>
+				<input type="text" name="intscore" id="intscore" value="<?php echo $_SESSION['intelraw'];?>" >
 			</div>
 			<div class="field">
 				<label>Mod</label>
@@ -78,7 +78,7 @@
 		<div class="stat">
 			<div class="field">
 				<label>WIS</label>
-				<input type="text" name="wisscore" id="wisscore" value="<?php echo $_SESSION['wisdomraw'];?>" readonly>
+				<input type="text" name="wisscore" id="wisscore" value="<?php echo $_SESSION['wisdomraw'];?>" >
 			</div>
 			<div class="field">
 				<label>Mod</label>
@@ -96,7 +96,7 @@
 		<div class="stat">
 			<div class="field">
 				<label>CHA</label>
-				<input type="text" name="chascore" id="chascore" value="<?php echo $_SESSION['charismaraw'];?>" readonly>
+				<input type="text" name="chascore" id="chascore" value="<?php echo $_SESSION['charismaraw'];?>" >
 			</div>
 			<div class="field">
 				<label>Mod</label>

@@ -82,15 +82,9 @@ if (isset($_POST['login_user'])) {
   }
 
   if (isset($_POST['create_character'])) {
-  
-    $username = $username;
 
-      $password = md5($password_1);//encrypt the password
-  
-      $query = "INSERT INTO character (username) 
-            VALUES('$username')";
-           mysqli_query($db, $query);
-        header('location: sheet.php');
+      $query = "INSERT INTO character (username) VALUES('$username')";
+      mysqli_query($db, $query);
       }
   
   ?>

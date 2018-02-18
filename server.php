@@ -117,12 +117,14 @@ if (isset($_POST['login_user'])) {
 		 $chareyes = mysqli_real_escape_string($db, $_POST['chareyes']);
     
      $_SESSION['charlvl'] = $charlvl;
-     
+     /*
 	  $query = "UPDATE `characters` SET `char_level`=$charlvl,`char_race`=$charrace,`char_size`=$charsize,`char_alignment`=$charalign,
 	  `char_gender`=$chargender,`char_age`=$charage,`char_height`=$charheight,`char_hair`=$charhair,`char_eye`=$chareyes) 
     WHERE $charname={$_SESSION['character']}";
+    */
       //$query = "INSERT INTO `characters` (`username`, `char_name`) VALUES ('{$_SESSION[username]}', '$charname')";
+      $query = "UDPATE `characters` SET `char_level` = $charlvl WHERE $charname={$_SESSION['character']}";
       mysqli_query($db, $query);
-      header('location: combat.php');  
+      header('location: sheet.php');  
 	}
   ?>

@@ -241,7 +241,7 @@ td > input, #touch > input, #flat > input, .offence > input
 
 /*SKILLS*/
 
-input[type="checkbox"]
+.skill > td > input
 {
-	background-color: none;
+	width: 5vw;
 }

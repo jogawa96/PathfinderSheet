@@ -58,7 +58,7 @@
 						<td>= 10 + </td>
 						<td><input type="text" name="acarmour" id="acarmour"></td>
 						<td><input type="text" name="acshield" id="acshield"></td>
-						<td><input type="text" name="acdex" id="acdex" value="<?php echo $_SESSION['dexterityraw'];?>" readonly></td>
+						<td><input class="text" type="text" name="acdex" id="acdex" value="<?php echo $_SESSION['dexterityraw'];?>" readonly></td>
 						<td><input type="text" name="acsize" id="acsize"></td>
 						<td><input type="text" name="acnatural" id="acnatural"></td>
 						<td><input type="text" name="acdeflection" id="acdeflection"></td>

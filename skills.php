@@ -16,7 +16,7 @@
 
 		<h1>Skills</h1>
 		<form>
-			<table>
+			<table id="skills">
 				<tr>
 					<th></th>
 					<th>Skill</th>
@@ -420,5 +420,6 @@
 
 			</table>
 		</form>
+		<script src="updateskills.js"></script>
 	</body>
 </html>

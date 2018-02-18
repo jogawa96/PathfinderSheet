@@ -62,27 +62,27 @@
 		<h3> Base Character Stats</h3>
 		<div class="input-group">	
         <label>Raw DEX</label>
-        <input type="text" name="dexterity_raw" value="<?php echo $dexterityraw; ?>">
+        <input type="text" name="dexterityraw" value="<?php echo $dexterityraw; ?>">
 		</div>
 		<div class="input-group">	
         <label>Raw CON</label>
-        <input type="text" name="constitution_raw" value="<?php echo $constitutionraw; ?>">
+        <input type="text" name="constitutionraw" value="<?php echo $constitutionraw; ?>">
 		</div>
 		<div class="input-group">	
         <label>Raw INT</label>
-        <input type="text" name="intel_raw" value="<?php echo $intelraw; ?>">
+        <input type="text" name="intelraw" value="<?php echo $intelraw; ?>">
 		</div>
 		<div class="input-group">	
         <label>Raw WIS</label>
-        <input type="text" name="wisdom_raw" value="<?php echo $wisdomraw; ?>">
+        <input type="text" name="wisdomraw" value="<?php echo $wisdomraw; ?>">
 		</div>
 		<div class="input-group">	
         <label>RAW CHA</label>
-        <input type="text" name="charisma_raw" value="<?php echo $charismaraw; ?>">
+        <input type="text" name="charismaraw" value="<?php echo $charismaraw; ?>">
 		</div>
         <div class="input-group">	
         <label>RAW STR</label>
-        <input type="text" name="strength_raw" value="<?php echo $strengthraw; ?>">
+        <input type="text" name="strengthraw" value="<?php echo $strengthraw; ?>">
 		</div>
         <div class="input-group">
         <button type="submit" name="create" class="btn" >Create New Character</button>

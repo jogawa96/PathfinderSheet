@@ -84,9 +84,16 @@ if (isset($_POST['login_user'])) {
   if (isset($_POST['create'])) {
 
      $charname = mysqli_real_escape_string($db, $_POST['charname']);
+     $charismaraw = mysqli_real_escape_string($db, $_POST['charismaraw']);
+     $wisdomraw = mysqli_real_escape_string($db, $_POST['wisdomraw']);
+     $intelraw = mysqli_real_escape_string($db, $_POST['intelraw']);
+     $strengthraw = mysqli_real_escape_string($db, $_POST['strengthraw']);
+     $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
+     $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
      $_SESSION['character'] = $charname;
     
-      $query = "INSERT INTO basicChar (`username`, `charName`) VALUES('{$_SESSION[username]}' , '$charname')";
+      $query = "INSERT INTO character (`username`, `charName`, `charisma_raw`, `wisdom_raw`, `intel_raw`, 'strength_raw`, `constitution_raw`, `dexterity_raw`') 
+                  VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       mysqli_query($db, $query);
       header('location: combat.php');
       }

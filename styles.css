@@ -48,6 +48,11 @@ aside
 	justify-content: center;
 }
 
+.statIn
+{
+	font-weight: bold;
+}
+
 aside > form
 {
 	width: 18vw;

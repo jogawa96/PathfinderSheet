@@ -1,7 +1,7 @@
 <?php include('server.php'); session_start();
 require_once "../config.php";
 ?>
-<form method="post" action="basic.php">	
+<form method="post" action="basic.php" class="charinfo">	
 			<div class="info">
 				<label>Name</label>
 				<input type="text" name="charname" id="charname" value=$_SESSION['character']>

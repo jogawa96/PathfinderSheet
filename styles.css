@@ -159,6 +159,18 @@ input
 
 /*OFFENCE*/
 
+#offence
+{
+	display: flex;
+	justify-content: center;
+}
+
+.offence
+{
+	display: inline;
+	margin: 10px;
+}
+
 #weapon { width: 15vw; }
 
 /*DEFENCE*/
@@ -200,21 +212,5 @@ td > input, #touch > input, #flat > input, .offence > input
 	font-weight: normal;
 }
 
-/*.comp
-{
-	display: inline-block;
-	border: 1px solid black;
-	height: 10vh;
-}
-.comp > input
-{
-	display: block;
-	width: 4vw;
-	height: 3vw;
-}
+/*SAVES*/
 
-
-.hide
-{
-	border: none;
-}*/

@@ -1,3 +1,8 @@
+<?php
+if (isset($_POST['charname'])) {
+	$setup = setUpDatabase();
+	mysqli_query($setup,"INSERT INTO `character` (`char_name`,`char_class`,`char_race`,`char_size`,`char_alignment`,`char_gender`,`char_age`,`char_
+
 <form class="charinfo">	
 			<div class="info">
 				<label>Name</label>
@@ -39,4 +44,6 @@
 				<label>Eye Colour: </label>
 				<input type="text" name="chareyes" id="chareyes">
 			</div>
+
+			</div><input type="submit" value="Save Data"></div>
 		</form>

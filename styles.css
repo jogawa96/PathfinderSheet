@@ -70,7 +70,7 @@ aside > form
 }
 
 /*MAIN PAGE*/
-h1 { text-align: center; }
+h1, h2 { text-align: center; }
 
 /*FORMS*/
 
@@ -159,19 +159,45 @@ input
 
 /*DEFENSE*/
 
-.comp
+.ac
+{
+	margin-bottom: 20px;
+}
+
+#acnormal
+{
+	margin-bottom: 20px;
+}
+
+td > input, #touch > input, #flat > input
+{
+	width: 4.5vw;
+	height: 5vh;
+}
+
+#touch, #flat { display: inline; }
+
+.labels > th
+{
+	font-size: 1.2vw;
+	text-align: center;
+}
+
+/*.comp
 {
 	display: inline-block;
-	/*border: 1px solid black;*/
+	border: 1px solid black;
+	height: 10vh;
 }
 .comp > input
 {
 	display: block;
 	width: 4vw;
+	height: 3vw;
 }
 
 
 .hide
 {
 	border: none;
-}
+}*/

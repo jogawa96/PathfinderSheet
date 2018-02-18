@@ -1,5 +1,4 @@
 <?php include('server.php'); session_start(); ?>
-<link href="style2.css" rel="stylesheet" />
 <aside>
 	<form>
 		<div class="sidestats">

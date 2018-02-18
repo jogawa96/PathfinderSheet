@@ -86,6 +86,7 @@ if (isset($_POST['login_user'])) {
       $charName = 'MisterMoo';
       $query = "INSERT INTO basicChar (username, charName) VALUES('$username', '$charName')";
       mysqli_query($db, $query);
+      header('location: sheets.php');
       }
   
   ?>

@@ -61,27 +61,27 @@
 		</div>
 		<h3> Base Character Stats</h3>
 		<div class="input-group">	
-        <label>Character Name</label>
+        <label>Raw DEX</label>
         <input type="text" name="dexterity_raw" value="<?php echo $dexterityraw; ?>">
 		</div>
 		<div class="input-group">	
-        <label>Character Name</label>
+        <label>Raw CON</label>
         <input type="text" name="constitution_raw" value="<?php echo $constitutionraw; ?>">
 		</div>
 		<div class="input-group">	
-        <label>Character Name</label>
+        <label>Raw INT</label>
         <input type="text" name="intel_raw" value="<?php echo $intelraw; ?>">
 		</div>
 		<div class="input-group">	
-        <label>Character Name</label>
+        <label>Raw WIS</label>
         <input type="text" name="wisdom_raw" value="<?php echo $wisdomraw; ?>">
 		</div>
 		<div class="input-group">	
-        <label>Character Name</label>
+        <label>RAW CHA</label>
         <input type="text" name="charisma_raw" value="<?php echo $charismaraw; ?>">
 		</div>
         <div class="input-group">	
-        <label>Character Name</label>
+        <label>RAW STR</label>
         <input type="text" name="strength_raw" value="<?php echo $strengthraw; ?>">
 		</div>
         <div class="input-group">

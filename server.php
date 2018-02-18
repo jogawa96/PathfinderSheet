@@ -83,9 +83,9 @@ if (isset($_POST['login_user'])) {
 
   if (isset($_POST['create'])) {
 
-     $charname = mysqli_real_escape_string($db, $_POST['username']);
+     $charname = mysqli_real_escape_string($db, $_POST['charname']);
     
-      $query = "INSERT INTO basicChar (username, charName) VALUES('$username', '$charName')";
+      $query = "INSERT INTO basicChar (username, charName) VALUES('$username', 'Luthor')";
       mysqli_query($db, $query);
       header('location: combat.php');
       }

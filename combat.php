@@ -1,3 +1,4 @@
+<?php include('server.php'); session_start(); ?>
 <!doctype html>
 <html>
 	<head>

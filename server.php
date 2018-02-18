@@ -83,7 +83,7 @@ if (isset($_POST['login_user'])) {
 
   if (isset($_POST['create_character'])) {
 
-      $query = "INSERT INTO character (username) VALUES('$username')";
+      $query = "INSERT INTO basicChar (username, charName) VALUES('$username', 'MisterMoo')";
       mysqli_query($db, $query);
       }
   

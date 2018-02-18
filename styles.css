@@ -71,6 +71,7 @@ aside > form
 .sidephysical > .sidestat, .sidemental > .sidestat, .sidehealth > .sidestat
 {
 	display: inline;
+	width: 16vw;
 }
 
 /*MAIN PAGE*/

@@ -77,36 +77,39 @@
 				</table>
 				<div id="acother">
 					<div id="touch">
-						<label>Touch: </label>
+						<label>Touch AC: </label>
 						<input type="text" name="actouch" id="actouch" readonly>
 					</div>
 					<div id="flat">
-						<label>Flat-Footed: </label>
+						<label>Flat-Footed AC: </label>
 						<input type="text" name="acflat" id="acflat" readonly>
 					</div>
 				</div>
 			</div>
-
-			<table id="cmd">
-				<tr>
-					<th>CMD: </th>
-					<td><input type="text" name="cmd" id="cmd" readonly></td>
-					<td>10 + </td>
-					<td><input type="text" name="cmdbab" id="cmdbab"></td>
-					<td><input type="text" name="cmdstr" id="cmdstr"></td>
-					<td><input type="text" name="cmddex" id="cmddex"></td>
-					<td><input type="text" name="cmdsize" id="cmdsize"></td>
-				</tr>
-				<tr class="labels">
-					<th> </th>
-					<th> </th>
-					<th> </th>
-					<th>BAB</th>
-					<th>STR</th>
-					<th>DEX</th>
-					<th>Size</th>
-				</tr>
-			</table>
+			<div class="wrapper">
+				<div>
+					<table id="cmd">
+						<tr>
+							<th>CMD: </th>
+							<td><input type="text" name="cmd" id="cmd" readonly></td>
+							<td>10 + </td>
+							<td><input type="text" name="cmdbab" id="cmdbab"></td>
+							<td><input type="text" name="cmdstr" id="cmdstr"></td>
+							<td><input type="text" name="cmddex" id="cmddex"></td>
+							<td><input type="text" name="cmdsize" id="cmdsize"></td>
+						</tr>
+						<tr class="labels">
+							<th> </th>
+							<th> </th>
+							<th> </th>
+							<th>BAB</th>
+							<th>STR</th>
+							<th>DEX</th>
+							<th>Size</th>
+						</tr>
+					</table>
+				</div>
+			</div>
 
 			<div class="saves">
 				<div class="save">
@@ -128,38 +131,46 @@
 							<th>Other</th>
 						</tr>
 					</table>
-
-					<label>Fortitude: </label>
-					<input type="text" name="fort" id="fort" readonly>
-					<span> = </span>
-					<input type="text" name="basefort" id="basefort">
-					<label>Base</label>
-					<input type="text" name="conmod" id="conmod" readonly>
-					<label>CON</label>
-					<input type="text" name="fortother" id="fortother">
-					<label>Other</label>
 				</div>
 				<div class="save">
-					<label>Reflex: </label>
-					<input type="text" name="ref" id="ref" readonly>
-					<span> = </span>
-					<input type="text" name="baseref" id="baseref">
-					<label>Base</label>
-					<input type="text" name="dexmod" id="dexmod" readonly>
-					<label>DEX</label>
-					<input type="text" name="refother" id="refother">
-					<label>Other</label>
+					<table id="fort">
+						<tr>
+							<th>Ref:</th>
+							<td><input type="text" name="ref" id="ref" readonly></td>
+							<td> = </td>
+							<td><input type="text" name="baseref" id="baseref"></td>
+							<td><input type="text" name="dexmod" id="dexmod" readonly></td>
+							<td><input type="text" name="refother" id="refother"></td>
+						</tr>
+						<tr class="labels">
+							<th> </th>
+							<th> </th>
+							<th> </th>
+							<th>Base</th>
+							<th>DEX</th>
+							<th>Other</th>
+						</tr>
+					</table>
 				</div>
 				<div class="save">
-					<label>Will: </label>
-					<input type="text" name="will" id="will" readonly>
-					<span> = </span>
-					<input type="text" name="basewill" id="basewill">
-					<label>Base</label>
-					<input type="text" name="wismod" id="wismod" readonly>
-					<label>WIS</label>
-					<input type="text" name="willother" id="willother">
-					<label>Other</label>
+					<table id="will">
+						<tr>
+							<th>Will:</th>
+							<td><input type="text" name="will" id="will" readonly></td>
+							<td> = </td>
+							<td><input type="text" name="basewill" id="basewill"></td>
+							<td><input type="text" name="wismod" id="wismod" readonly></td>
+							<td><input type="text" name="willother" id="willother"></td>
+						</tr>
+						<tr class="labels">
+							<th> </th>
+							<th> </th>
+							<th> </th>
+							<th>Base</th>
+							<th>WIS</th>
+							<th>Other</th>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</form>

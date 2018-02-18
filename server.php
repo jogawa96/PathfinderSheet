@@ -92,7 +92,7 @@ if (isset($_POST['login_user'])) {
      $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
      $_SESSION['character'] = $charname;
     
-      $query = "INSERT INTO character (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, 'strength_raw`, `constitution_raw`, `dexterity_raw`') 
+      $query = "INSERT INTO character (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                   VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       mysqli_query($db, $query);
       header('location: combat.php');

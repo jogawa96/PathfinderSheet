@@ -91,7 +91,7 @@ if (isset($_POST['login_user'])) {
      $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
      $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
      
-	 $_SESSION['strenthraw'] = $strengthraw;
+	   $_SESSION['strengthraw'] = $strengthraw;
      $_SESSION['character'] = $charname;
      $_SESSION['charismaraw'] = $charismaraw;
      $_SESSION['wisdomraw'] = $wisdomraw;
@@ -102,7 +102,12 @@ if (isset($_POST['login_user'])) {
       $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                   VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       mysqli_query($db, $query);
+<<<<<<< HEAD
 	  
+=======
+      
+	}
+>>>>>>> 41d219a08f674a60540c580770236e9acbb7f03c
 	  if (isset($_POST['Save'])) {
 		 $charlvl = mysqli_real_escape_string($db, $_POST['charlvl']);
 		 $charrace = mysqli_real_escape_string($db, $_POST['charrace']);
@@ -113,6 +118,7 @@ if (isset($_POST['login_user'])) {
 		 $charheight = mysqli_real_escape_string($db, $_POST['charheight']);
 		 $charhair = mysqli_real_escape_string($db, $_POST['charhair']);
 		 $chareyes = mysqli_real_escape_string($db, $_POST['chareyes']);
+<<<<<<< HEAD
 	  }
 	  $query = "INSERT INTO `characters` (`char_level`,`char_race`,`char_size`,`char_alignment`,`char_gender`,`char_age`,`char_height`,`char_hair`,`char_eye`) 
 	  VALUES ('$charlvl','$charrace','$charsize','$charalign','$chargender','$charalign','$chargender','$charage','$charheight','$charhair','$chareyes')";
@@ -120,4 +126,14 @@ if (isset($_POST['login_user'])) {
       
       header('location: combat.php');
       }
+=======
+	  
+	  $query = "UPDATE `characters` SET `char_level`=$charlvl,`char_race`=$charrace,`char_size`=$charsize,`char_alignment`=$charalign,
+	  `char_gender`=$chargender,`char_age`=$charage,`char_height`=$charheight,`char_hair`=$charhair,`char_eye`=$chareyes) 
+    WHERE $charname={$_SESSION['character']}";
+      //$query = "INSERT INTO `characters` (`username`, `char_name`) VALUES ('{$_SESSION[username]}', '$charname')";
+      mysqli_query($db, $query);
+      header('location: combat.php');  
+	}
+>>>>>>> 41d219a08f674a60540c580770236e9acbb7f03c
   ?>

@@ -102,6 +102,7 @@ if (isset($_POST['login_user'])) {
       $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                   VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       mysqli_query($db, $query);
+      header('location: sheet.php');
       
 	}
 	  if (isset($_POST['Save'])) {

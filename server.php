@@ -96,7 +96,7 @@ if (isset($_POST['login_user'])) {
       $query = "INSERT INTO character (username, char_name, charisma_raw, wisdom_raw, intel_raw, strength_raw, constitution_raw, dexterity_raw) 
                   VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       */
-  $query = "INSERT INTO character (username, char_name) VALUE ('{$_SESSION[username]}', '$charname')";
+  $query = "INSERT INTO basicChar (username, char_name) VALUE ('{$_SESSION[username]}', '$charname')";
       mysqli_query($db, $query);
       header('location: combat.php');
       }

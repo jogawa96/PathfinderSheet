@@ -4,7 +4,7 @@ require_once "../config.php";
 session_start();
 
 // initializing variables
-$username = "test";
+$username = "";
 $email    = "";
 $errors = array(); 
 

@@ -18,12 +18,6 @@ con.addEventListener("change", function(){conscore = update("con");});
 int.addEventListener("change", function(){intscore = update("int");});
 wis.addEventListener("change", function(){wisscore = update("wis");});
 cha.addEventListener("change", function(){chascore = update("cha");});
-str.addEventListener("load", function(){strscore = update("str");});
-dex.addEventListener("load", function(){dexscore = update("dex");});
-con.addEventListener("load", function(){conscore = update("con");});
-int.addEventListener("load", function(){intscore = update("int");});
-wis.addEventListener("load", function(){wisscore = update("wis");});
-cha.addEventListener("load", function(){chascore = update("cha");});
 
 function update(x)
 {

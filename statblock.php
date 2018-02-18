@@ -1,5 +1,5 @@
 <?php include('server.php'); session_start(); ?>
-<form class="statblock" onload="update('str'); update('dex'); update('con'); update('int'); update('wis'); update('cha');">
+<form class="statblock">
 	<div class="physical">
 		<div class="stat">
 			<div class="field">

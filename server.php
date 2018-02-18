@@ -94,7 +94,7 @@ if (isset($_POST['login_user'])) {
     
       
       $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
-                  VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
+                  VALUES('{$_SESSION[username]}' , '$charname', '87', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
       
       //$query = "INSERT INTO `characters` (`username`, `char_name`) VALUES ('{$_SESSION[username]}', '$charname')";
       mysqli_query($db, $query);

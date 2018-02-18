@@ -115,7 +115,9 @@ if (isset($_POST['login_user'])) {
 		 $charheight = mysqli_real_escape_string($db, $_POST['charheight']);
 		 $charhair = mysqli_real_escape_string($db, $_POST['charhair']);
 		 $chareyes = mysqli_real_escape_string($db, $_POST['chareyes']);
-	  
+    
+     $_SESSION['charlvl'] = $charlvl;
+     
 	  $query = "UPDATE `characters` SET `char_level`=$charlvl,`char_race`=$charrace,`char_size`=$charsize,`char_alignment`=$charalign,
 	  `char_gender`=$chargender,`char_age`=$charage,`char_height`=$charheight,`char_hair`=$charhair,`char_eye`=$chareyes) 
     WHERE $charname={$_SESSION['character']}";

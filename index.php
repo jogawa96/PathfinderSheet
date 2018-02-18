@@ -50,7 +50,7 @@
     	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
     	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
 	<?php endif ?>
-	<form>
+	<form method="post" action="index.php">
 	<div class="input-group">
   		<button type="submit" class="btn" name="create_character">Create Character</button>
 	</div>

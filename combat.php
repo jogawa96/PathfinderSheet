@@ -71,7 +71,7 @@
 						<th> </th>
 						<th>Armour</th>
 						<th>Shield</th>
-						<th>Dex</th>
+						<th value="<?php echo $_SESSION['character'];?>">Dex</th>
 						<th>Size</th>
 						<th>Natural</th>
 						<th>Deflection</th>

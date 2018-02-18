@@ -16,16 +16,21 @@
 
 		<h1>Offence</h1>
 		<form id="offence">
-			<div class="offence">
-				<label>Initiative: </label>
-				<input type="text" name="init" id="init">
-			</div>
-			<div class="offence">
-				<label>Base Attack Bonus: </label>
-				<input type="text" name="bab" id="bab">
-			</div>
+			<div class="container">
+				<div class="offence">
+					<label>Initiative: </label>
+					<input type="text" name="init" id="init">
+				</div>
+				<div class="offence">
+					<label>Base Attack Bonus: </label>
+					<input type="text" name="bab" id="bab">
+				</div>
+				<div class="offence">
+					<label>CMB: </label>
+					<input type="text" name="cmb" id="cmb">
+				</div>
 
-			<h2>Weapon Attacks</h2>
+				<h2>Weapon Attacks</h2>
 				<div class="offence weaponattack">
 					<label>Weapon: </label>
 					<input type="text" name="weapon" id="weapon">
@@ -36,6 +41,7 @@
 					<label>Special: </label>
 					<input type="text" name="special" id="special">
 				</div>
+			</div>
 		</form>
 
 		<h1>Defence</h1>
@@ -104,6 +110,25 @@
 
 			<div class="saves">
 				<div class="save">
+					<table id="fort">
+						<tr>
+							<th>Fort:</th>
+							<td><input type="text" name="fort" id="fort" readonly></td>
+							<td> = </td>
+							<td><input type="text" name="basefort" id="basefort"></td>
+							<td><input type="text" name="conmod" id="conmod" readonly></td>
+							<td><input type="text" name="fortother" id="fortother"></td>
+						</tr>
+						<tr class="labels">
+							<th> </th>
+							<th> </th>
+							<th> </th>
+							<th>Base</th>
+							<th>CON</th>
+							<th>Other</th>
+						</tr>
+					</table>
+
 					<label>Fortitude: </label>
 					<input type="text" name="fort" id="fort" readonly>
 					<span> = </span>

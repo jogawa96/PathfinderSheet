@@ -54,11 +54,36 @@
 	<form method="post" action="index.php">
     <!-- VALIDATION ERRORS -->
     <?php include('errors.php'); ?>
-
-        <div class="input-group">
+	<h3> Base Character Design </h3>
+        <div class="input-group">	
         <label>Character Name</label>
         <input type="text" name="charname" value="<?php echo $charname; ?>">
-        </div>
+		</div>
+		<h3> Base Character Stats</h3>
+		<div class="input-group">	
+        <label>Character Name</label>
+        <input type="text" name="dexterity_raw" value="<?php echo $dexterityraw; ?>">
+		</div>
+		<div class="input-group">	
+        <label>Character Name</label>
+        <input type="text" name="constitution_raw" value="<?php echo $constitutionraw; ?>">
+		</div>
+		<div class="input-group">	
+        <label>Character Name</label>
+        <input type="text" name="intel_raw" value="<?php echo $intelraw; ?>">
+		</div>
+		<div class="input-group">	
+        <label>Character Name</label>
+        <input type="text" name="wisdom_raw" value="<?php echo $wisdomraw; ?>">
+		</div>
+		<div class="input-group">	
+        <label>Character Name</label>
+        <input type="text" name="charisma_raw" value="<?php echo $charismaraw; ?>">
+		</div>
+        <div class="input-group">	
+        <label>Character Name</label>
+        <input type="text" name="strength_raw" value="<?php echo $strengthraw; ?>">
+		</div>
         <div class="input-group">
         <button type="submit" name="create" class="btn" >Create New Character</button>
 		</div>

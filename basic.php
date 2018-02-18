@@ -43,5 +43,5 @@ require_once "../config.php";
 				<input type="text" name="chareyes" id="chareyes" value="<?php echo $chareyes; ?>">
 			</div>
 
-			</div><input type="submit" name="Save" value="Save Data"></div>
+			</div><input type="submit" name="save" class="btn"></div>
 		</form>

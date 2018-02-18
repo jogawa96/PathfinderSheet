@@ -105,7 +105,7 @@ if (isset($_POST['login_user'])) {
       header('location: sheet.php');
       
 	}
-	  if (isset($_POST['Save'])) {
+	  if (isset($_POST['save'])) {
 		 $charlvl = mysqli_real_escape_string($db, $_POST['charlvl']);
 		 $charrace = mysqli_real_escape_string($db, $_POST['charrace']);
 		 $charsize = mysqli_real_escape_string($db, $_POST['charsize']);

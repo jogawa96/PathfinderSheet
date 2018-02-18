@@ -17,20 +17,23 @@
 		<h1>Offence</h1>
 		<form id="offence">
 			<div class="container">
-				<div class="offence">
-					<label>Initiative: </label>
-					<input type="text" name="init" id="init">
-				</div>
-				<div class="offence">
-					<label>Base Attack Bonus: </label>
-					<input type="text" name="bab" id="bab">
-				</div>
-				<div class="offence">
-					<label>CMB: </label>
-					<input type="text" name="cmb" id="cmb">
+				<div class="wrapper">
+					<div>
+						<div class="offence">
+							<label>Initiative: </label>
+							<input type="text" name="init" id="init">
+						</div>
+						<div class="offence">
+							<label>Base Attack Bonus: </label>
+							<input type="text" name="bab" id="bab">
+						</div>
+						<div class="offence">
+							<label>CMB: </label>
+							<input type="text" name="cmb" id="cmb">
+						</div>
+					</div>
 				</div>
 
-				<h2>Weapon Attacks</h2>
 				<div class="offence weaponattack">
 					<label>Weapon: </label>
 					<input type="text" name="weapon" id="weapon">

@@ -43,6 +43,8 @@ aside
 	top: 5rem;
 	left: 0;
 	width: 18vw;
+	display: flex;
+	justify-content: center;
 }
 
 aside > form
@@ -174,6 +176,11 @@ input
 
 #weapon { width: 15vw; }
 
+.container > div
+{
+	margin: 20px;
+}
+
 /*DEFENCE*/
 
 .ac
@@ -230,4 +237,11 @@ td > input, #touch > input, #flat > input, .offence > input
 .save
 {
 	margin: 10px;
+}
+
+/*SKILLS*/
+
+input[type="checkbox"]
+{
+	background-color: none;
 }

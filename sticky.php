@@ -1,3 +1,4 @@
+<?php include('server.php'); session_start(); ?>
 <aside>
 	<form>
 		<div class="sidestats">

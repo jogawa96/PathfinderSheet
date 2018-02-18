@@ -52,7 +52,7 @@
 	<?php endif ?>
 	<form method="post" action="index.php">
 	<div class="input-group">
-  		<button type="submit" class="btn" name="create_character">Create Character</button>
+  		<button type="submit" name="create" class="btn">Create Character</button>
 	</div>
 	</form>
 </div>

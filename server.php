@@ -81,7 +81,7 @@ if (isset($_POST['login_user'])) {
     }
   }
 
-  if (isset($_POST['create_character'])) {
+  if (isset($_POST['create'])) {
 
       $charName = 'MisterMoo';
       $query = "INSERT INTO basicChar (username, charName) VALUES('$username', '$charName')";

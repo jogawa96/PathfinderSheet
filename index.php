@@ -1,4 +1,4 @@
-
+<?php include('server.php') ?>
 <html>
     <head>
 		<title>Home Page</title>

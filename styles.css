@@ -156,3 +156,22 @@ input
 	width: 85%;
 	text-align: center;
 }
+
+/*DEFENSE*/
+
+.comp
+{
+	display: inline-block;
+	/*border: 1px solid black;*/
+}
+.comp > input
+{
+	display: block;
+	width: 4vw;
+}
+
+
+.hide
+{
+	border: none;
+}

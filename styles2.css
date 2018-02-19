@@ -1,0 +1,41 @@
+
+html
+{
+	background-image: url("background.jpg");
+	display: flex;
+	justify-content: center;
+	font-family: 'Dosis', sans-serif;
+}
+
+body
+{
+	width: 60vw;
+}
+
+/*INPUT FIELDS*/
+input, textarea
+{
+	background: transparent;
+}
+
+textarea
+{
+	width: 60vw;
+	height: 50vh;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5vw;
+}
+
+input
+{
+	width: 200px;
+	height: 2vw;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5vw;
+}
+
+.info > input
+{
+	width: 200px;
+}

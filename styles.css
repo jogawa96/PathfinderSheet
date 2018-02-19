@@ -112,14 +112,6 @@ input
 	font-size: 1.5vw;
 }
 
-#loginusername, #loginpassword {
-	width: 80vw;
-	height: 2vw;
-	text-align: left;
-	font-family: 'Dosis', sans-serif;
-	font-size: 1.5vw;
-}
-
 .info > input
 {
 	width: 10vw;

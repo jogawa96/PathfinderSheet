@@ -65,12 +65,9 @@
         <div class="input-group">
         <button type="submit" name="create" class="btn" >Create New Character</button>
 		</div>
-		<div class="input-group">
-		<button type="submit" name="logout_user" class="btn"> Logout </button>
-		</div>
     </form>
 </div>
-	<footer><form method="post"><div class="input-group" name="logout_user" class="btn"> Logout </button> </form></footer>
+	<footer><form method="post"><div class="input-group"><button name="logout_user" class="btn"> Logout </button> </div></form></footer>
 
 </body>
 </html>

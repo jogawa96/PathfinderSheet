@@ -70,6 +70,7 @@
 		</div>
     </form>
 </div>
-		
+	<footer><form method="post"><div class="input-group" name="logout_user" class="btn"> Logout </button> </form></footer>
+
 </body>
 </html>

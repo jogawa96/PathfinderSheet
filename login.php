@@ -16,13 +16,13 @@ session_start();
 	 
   <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
-  	<div class="input-group">
+  	<div class="input-group" id="loginusername">
   		<label>Username</label>
-  		<input class="userinfo" type="text" name="username" >
+  		<input type="text" name="username" >
   	</div>
-  	<div class="input-group">
+  	<div class="input-group" id="loginpassword">
   		<label>Password</label>
-  		<input class="userinfo" type="password" name="password">
+  		<input type="password" name="password">
   	</div>
   	<div class="input-group">
   		<button type="submit" class="btn" name="login_user">Login</button>

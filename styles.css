@@ -112,8 +112,8 @@ input
 	font-size: 1.5vw;
 }
 
-input.userinfo {
-	width: 10vw;
+#loginusername, #loginpassword {
+	width: 80vw;
 	height: 2vw;
 	text-align: left;
 	font-family: 'Dosis', sans-serif;

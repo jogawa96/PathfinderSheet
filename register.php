@@ -4,7 +4,7 @@
 <html>
     <head>
         <title>Sign Up</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles2.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     </head>
 

@@ -45,8 +45,9 @@ input
 }
 
 /* CREATE CHARACTER PAGE */
-form 
+div.input-group
 {
-	margin: 0px auto;
 	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }

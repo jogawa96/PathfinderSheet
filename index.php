@@ -65,8 +65,9 @@
         <div class="input-group">
         <button type="submit" name="create" class="btn" >Create New Character</button>
 		</div>
-		<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-		
+		<div class="input-group">
+		<button type="submit" name="logout_user" class="btn"> Logout </button>
+		</div>
     </form>
 </div>
 		

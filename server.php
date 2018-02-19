@@ -78,33 +78,43 @@ if (isset($_POST['login_user'])) {
         }else {
             array_push($errors, "Wrong username/password combination");
         }
-    }
   }
+}
 
-  if (isset($_POST['create'])) {
+// LOG OUT USER
+if (isset($_POST['logout_user'])) {
+  unset($_SESSION['username']);
+  header('location: login.php');
+}
 
-     $charname = mysqli_real_escape_string($db, $_POST['charname']);
-     $charismaraw = mysqli_real_escape_string($db, $_POST['charismaraw']);
-     $wisdomraw = mysqli_real_escape_string($db, $_POST['wisdomraw']);
-     $intelraw = mysqli_real_escape_string($db, $_POST['intelraw']);
-     $strengthraw = mysqli_real_escape_string($db, $_POST['strengthraw']);
-     $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
-     $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
-     
-	   $_SESSION['strengthraw'] = $strengthraw;
-     $_SESSION['character'] = $charname;
-     $_SESSION['charismaraw'] = $charismaraw;
-     $_SESSION['wisdomraw'] = $wisdomraw;
-     $_SESSION['intelraw'] = $intelraw;
-     $_SESSION['constitutionraw'] = $constitutionraw;
-     $_SESSION['dexterityraw'] = $dexterityraw;
+// CREATE A CHARACTER AND SET BASE STATS ! 
+
+if (isset($_POST['create'])) {
+
+   $charname = mysqli_real_escape_string($db, $_POST['charname']);
+   $charismaraw = mysqli_real_escape_string($db, $_POST['charismaraw']);
+   $wisdomraw = mysqli_real_escape_string($db, $_POST['wisdomraw']);
+   $intelraw = mysqli_real_escape_string($db, $_POST['intelraw']);
+   $strengthraw = mysqli_real_escape_string($db, $_POST['strengthraw']);
+   $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
+   $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
+   
+   $_SESSION['strengthraw'] = $strengthraw;
+   $_SESSION['character'] = $charname;
+   $_SESSION['charismaraw'] = $charismaraw;
+   $_SESSION['wisdomraw'] = $wisdomraw;
+   $_SESSION['intelraw'] = $intelraw;
+   $_SESSION['constitutionraw'] = $constitutionraw;
+   $_SESSION['dexterityraw'] = $dexterityraw;
       
-      $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
-                  VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
-      mysqli_query($db, $query);
-      header('location: sheet.php');
-      
-	}
+    $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
+                VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
+    mysqli_query($db, $query);
+    header('location: sheet.php');
+    
+}
+  
+// UPDATE MORE THAN BASE STATS ON SHEET PAGE
 	  if (isset($_POST['save'])) {
 		 $charlvl = mysqli_real_escape_string($db, $_POST['charlvl']);
 		 $charrace = mysqli_real_escape_string($db, $_POST['charrace']);

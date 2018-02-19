@@ -12,7 +12,8 @@ html
 
 body
 {
-	width: 60vw;
+    width: 60vw;
+    justify-content: center;
 }
 
 /*INPUT FIELDS*/

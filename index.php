@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles2.css">
 </head>
 <body>
 
@@ -27,7 +27,6 @@
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
     	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
 	<?php endif ?>
 
 	<form method="post" action="index.php">
@@ -66,6 +65,7 @@
         <div class="input-group">
         <button type="submit" name="create" class="btn" >Create New Character</button>
 		</div>
+		<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
 		
     </form>
 </div>

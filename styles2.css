@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-h1, h2 { text-align: center; }
+h1, h2, h3 { text-align: center; }
 
 html
 {
@@ -42,4 +42,10 @@ input
 .info > input
 {
 	width: 200px;
+}
+
+/* CREATE CHARACTER PAGE */
+form 
+{
+	margin: 0 auto;
 }

@@ -98,8 +98,8 @@
 							<td><input type="text" name="cmd" id="cmd" readonly></td>
 							<td>10 + </td>
 							<td><input type="text" name="cmdbab" id="cmdbab"></td>
-							<td><input type="text" name="cmdstr" id="cmdstr"></td>
-							<td><input type="text" name="cmddex" id="cmddex"></td>
+							<td><input type="text" name="cmdstr" id="cmdstr" value="<?php echo $_SESSION['strengthraw'];?>" readonly></td>
+							<td><input type="text" name="cmddex" id="cmddex" value="<?php echo $_SESSION['dexterityraw'];?>" readonly></td>
 							<td><input type="text" name="cmdsize" id="cmdsize"></td>
 						</tr>
 						<tr class="labels">

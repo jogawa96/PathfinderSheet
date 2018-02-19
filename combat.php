@@ -123,7 +123,7 @@
 							<td><input type="text" name="fort" id="fort" readonly></td>
 							<td> = </td>
 							<td><input type="text" name="basefort" id="basefort"></td>
-							<td><input type="text" name="conmod" id="conmod" readonly></td>
+							<td><input type="text" name="conmod" id="conmod" value="<?php echo $_SESSION['constitutionraw'];?>" readonly></td>
 							<td><input type="text" name="fortother" id="fortother"></td>
 						</tr>
 						<tr class="labels">
@@ -143,7 +143,7 @@
 							<td><input type="text" name="ref" id="ref" readonly></td>
 							<td> = </td>
 							<td><input type="text" name="baseref" id="baseref"></td>
-							<td><input type="text" name="dexmod" id="dexmod" readonly></td>
+							<td><input type="text" name="dexmod" id="dexmod" value="<?php echo $_SESSION['dexterityraw'];?>" readonly></td>
 							<td><input type="text" name="refother" id="refother"></td>
 						</tr>
 						<tr class="labels">
@@ -163,7 +163,7 @@
 							<td><input type="text" name="will" id="will" readonly></td>
 							<td> = </td>
 							<td><input type="text" name="basewill" id="basewill"></td>
-							<td><input type="text" name="wismod" id="wismod" readonly></td>
+							<td><input type="text" name="wismod" id="wismod" value="<?php echo $_SESSION['wisdomraw'];?>" readonly></td>
 							<td><input type="text" name="willother" id="willother"></td>
 						</tr>
 						<tr class="labels">

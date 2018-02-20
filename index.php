@@ -1,4 +1,4 @@
-<?php include('server.php'); include('charpull.php'); session_start(); ?>
+<?php include('server.php'); session_start(); ?>
 
 <!DOCTYPE html>
 <html>

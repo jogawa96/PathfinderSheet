@@ -2,6 +2,13 @@
 
 h1, h2, h3 { text-align: center; }
 
+.container
+{
+	width: 480px;
+	height: 360px;
+	align-content: center;
+}
+
 html
 {
 	background-image: url("background.jpg");

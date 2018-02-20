@@ -32,9 +32,8 @@
 	<!-- trying to pull this user's characters from the database-->
 	<?php include 'charpull.php' ?>
 
-	<form action="charcreate.php">
-	<input type="submit" value="Create New Character"/>
-	</form>
+	<button onclick="location.href='charcreate.php'" type="button">
+     Create Character</button>
 	<footer><form method="post"><div class="input-group"><button name="logout_user" class="btn"> Logout </button> </div></form></footer>
 
 </body>

@@ -11,7 +11,7 @@ $all_property = array();
 
 $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['username']}'");
 
-echo "<div class=\"container\"><form><h1>Characters</h1>";
+echo "<div class=\"container\"><form type=\"POST\" action=\"index.php\"><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
   echo "<input type=\"radio\" name=\"characterpick\" value=\"$charnames\">$charnames</button>
   </div>";

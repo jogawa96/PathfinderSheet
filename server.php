@@ -136,5 +136,16 @@ if (isset($_POST['create'])) {
       $query = "UDPATE `characters` SET `char_level` = $charlvl WHERE $charname={$_SESSION['character']}";
       mysqli_query($db, $query);
       header('location: sheet.php');  
-	}
+  }
+  
+  // PICK A CHARACTER FROM HOME PAGE
+  if (isset($_POST['pickchar'])){
+    if (isset($_POST['characterpick']))
+    {
+      $charname = mysqli_real_escape_string($db, $_POST['characterpick']);
+      $_SESSION['charname'] = $charname;
+      header('location: sheet.php');
+    }
+		 
+  }
   ?>

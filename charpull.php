@@ -11,12 +11,11 @@ $all_property = array();
 
 $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['username']}'");
 
-echo "<form method=\"Post\" action=\"index.php\"><h1>Characters</h1>";
+echo "<div class=\"container\"><form><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
-  echo "<div class=\"input-group\">
-  <button type=\"submit\" name=\"create\" class=\"btn\">$charnames</button>
+  echo "<input type=\"radio\" name=\"characterpick\" value=\"$charnames\">$charnames</button>
   </div>";
-echo "</form>";
+echo "<input name=\"pickchar\" type=\"submit\" value=\"Choose This Character\"/></div></form>";
 }
 
 /*

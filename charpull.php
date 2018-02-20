@@ -21,7 +21,7 @@ while(list($charnames)=$rows->fetch_row()){
 echo "<input name=\"pickchar\" type=\"submit\" value=\"ChooseCharacter\"/></div></form>";
 
 
-if (isset($_POST['action'])) {
+if (isset($_POST['charpick'])) {
     $charname = $_POST['charpick'];
     $_SESSION['charname'] = $charname;
     heading('location: sheet.php');

@@ -20,6 +20,16 @@ while(list($charnames)=$rows->fetch_row()){
 }
 echo "<input name=\"pickchar\" type=\"submit\" value=\"Choose This Character\"/></div></form>";
 
+  // PICK A CHARACTER FROM HOME PAGE
+  if (isset($_POST['pickchar'])){
+    if (isset($_POST['radio']))
+    {
+      $charname = mysqli_real_escape_string($db, $_POST['characterpick']);
+      $_SESSION['charname'] = $charname;
+      header('location: sheet.php');
+    }
+		 
+  }
 
 /*
 //showing property

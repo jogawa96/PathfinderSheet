@@ -139,10 +139,4 @@ if (isset($_POST['create'])) {
   }
   
 
-  // CHOOSE CHARACTER
-  if (isset($_POST['charpick'])) {
-    $charname = $_POST['charpick'];
-    $_SESSION['charname'] = $charname;
-    heading('location: sheet.php');
-}
   ?>

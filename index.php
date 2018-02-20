@@ -30,10 +30,11 @@
 	<?php endif ?>
 
 	<!-- trying to pull this user's characters from the database-->
-	<?php include charpull.php ?>
+	<?php include 'charpull.php' ?>
 
-	<a href="charcreate.php"><button value="Create New Character"/></a>
-
+	<form action="charcreate.php">
+	<input type="submit" value="Create New Character"/>
+	</form>
 	<footer><form method="post"><div class="input-group"><button name="logout_user" class="btn"> Logout </button> </div></form></footer>
 
 </body>

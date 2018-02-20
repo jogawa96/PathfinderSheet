@@ -31,7 +31,6 @@
 
 	<!-- trying to pull this user's characters from the database-->
 
-	<?php include 'charpull.php'; ?>
 
 	<form method="post" action="index.php">
     <!-- VALIDATION ERRORS -->

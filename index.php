@@ -32,9 +32,12 @@
 	<!-- trying to pull this user's characters from the database-->
 	<?php include 'charpull.php' ?>
 
-	<button onclick="location.href='charcreate.php'" type="button">
-     Create Character</button>
-	<footer><form method="post"><div class="input-group"><button name="logout_user" class="btn"> Logout </button> </div></form></footer>
+
+	<footer>
+	<button onclick="location.href='charcreate.php'" type="button">Create New Character</button>
+	<form method="post"><div class="input-group"><button name="logout_user" class="btn"> Logout </button> 
+	</div></form>
+	</footer>
 
 </body>
 </html>

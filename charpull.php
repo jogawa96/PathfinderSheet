@@ -13,19 +13,12 @@ $all_property = array();
 
 $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['username']}'");
 
-echo "<div class=\"container\"><form type=\"POST\" action=\"charpull.php\"><h1>Characters</h1>";
+echo "<div class=\"container\"><form type=\"POST\" action=\"index.php\"><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
   echo "<input type=\"submit\" name=\"charpick\" value=\"$charnames\"/>
   </div>";
 }
 echo "<input name=\"pickchar\" type=\"submit\" value=\"ChooseCharacter\"/></div></form>";
-
-
-if (isset($_POST['charpick'])) {
-    $charname = $_POST['charpick'];
-    $_SESSION['charname'] = $charname;
-    heading('location: sheet.php');
-}
 
 /*
 //showing property

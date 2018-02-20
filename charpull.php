@@ -15,7 +15,7 @@ $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['u
 
 echo "<div class=\"container\"><form type=\"POST\" action=\"\"><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
-  echo "<input type=\"submit\" name=\"charpick\" value=\"$charnames\">$charnames</button>
+  echo "<input type=\"submit\" name=\"charpick\" value=\"$charnames\"/>
   </div>";
 }
 echo "<input name=\"pickchar\" type=\"submit\" value=\"ChooseCharacter\"/></div></form>";

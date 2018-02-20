@@ -9,7 +9,7 @@ session_start();
 	<link rel="stylesheet" href="styles2.css">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
-<body>
+<body id="login">
   <div class="header">
   	<h2>Login</h2>
   </div>

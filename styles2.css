@@ -13,7 +13,7 @@ html
 body
 {
     width: 60vw;
-    justify-content: center;
+	justify-content: center;
 }
 
 /*INPUT FIELDS*/
@@ -56,8 +56,15 @@ div.input-group
 
 footer {
 	background-color: transparent;	
-	color: white;	
-	font-size: 0.7em;
+	font-family: serif;
+	color: black;	
+	font-size: 1.0em;
 	text-align: center;
 	padding: 25px;
+	font-family: 'Dosis', sans-serif;
+}
+
+body#login 
+{
+	line-height: 3.4;
 }

@@ -13,22 +13,19 @@ $all_property = array();
 
 $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['username']}'");
 
-echo "<div class=\"container\"><form type=\"POST\" action=\"index.php\"><h1>Characters</h1>";
+echo "<div class=\"container\"><form type=\"POST\" action=\"\"><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
-  echo "<input type=\"radio\" name=\"radio\" value=\"$charnames\">$charnames</button>
+  echo "<input type=\"radio\" name=\"charpick\" value=\"$charnames\">$charnames</button>
   </div>";
 }
-echo "<input name=\"pickchar\" type=\"submit\" value=\"Choose This Character\"/></div></form>";
+echo "<input name=\"pickchar\" type=\"submit\" value=\"ChooseCharacter\"/></div></form>";
 
   // PICK A CHARACTER FROM HOME PAGE
   if (isset($_POST['pickchar'])){
-    if (isset($_POST['radio']))
-    {
-      $charname = mysqli_real_escape_string($db, $_POST['characterpick']);
-      $_SESSION['charname'] = $charname;
-      header('location: sheet.php');
-    }
-		 
+
+    $charname = $_POST['charpick'];
+    $_SESSION['charname'] = $charname;	 
+    header('location: sheet.php');
   }
 
 /*

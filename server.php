@@ -140,7 +140,7 @@ if (isset($_POST['create'])) {
   
   // PICK A CHARACTER FROM HOME PAGE
   if (isset($_POST['pickchar'])){
-    if (isset($_POST['characterpick']))
+    if (isset($_POST['radio']))
     {
       $charname = mysqli_real_escape_string($db, $_POST['characterpick']);
       $_SESSION['charname'] = $charname;

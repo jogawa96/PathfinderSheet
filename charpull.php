@@ -1,6 +1,8 @@
 <?php
 require_once "../config.php";
+include('server.php');
 session_start();
+
 
 // connect to the database (need database info here) 
 $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
@@ -13,7 +15,7 @@ $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['u
 
 echo "<div class=\"container\"><form type=\"POST\" action=\"index.php\"><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
-  echo "<input type=\"radio\" name=\"characterpick\" value=\"$charnames\">$charnames</button>
+  echo "<input type=\"radio\" name=\"radio\" value=\"$charnames\">$charnames</button>
   </div>";
 }
 echo "<input name=\"pickchar\" type=\"submit\" value=\"Choose This Character\"/></div></form>";

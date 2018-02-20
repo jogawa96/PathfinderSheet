@@ -15,8 +15,9 @@ echo "<div class=\"container\"><form><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
   echo "<input type=\"radio\" name=\"characterpick\" value=\"$charnames\">$charnames</button>
   </div>";
-echo "<input name=\"pickchar\" type=\"submit\" value=\"Choose This Character\"/></div></form>";
 }
+echo "<input name=\"pickchar\" type=\"submit\" value=\"Choose This Character\"/></div></form>";
+
 
 /*
 //showing property

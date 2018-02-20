@@ -29,6 +29,10 @@
     	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
 	<?php endif ?>
 
+	<!-- trying to pull this user's characters from the database-->
+
+	<?php include 'charpull.php'; ?>
+
 	<form method="post" action="index.php">
     <!-- VALIDATION ERRORS -->
     <?php include('errors.php'); ?>

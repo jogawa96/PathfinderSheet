@@ -20,13 +20,12 @@ while(list($charnames)=$rows->fetch_row()){
 }
 echo "<input name=\"pickchar\" type=\"submit\" value=\"ChooseCharacter\"/></div></form>";
 
-  // PICK A CHARACTER FROM HOME PAGE
-  if (isset($_POST['pickchar'])){
-      echo("<h1>youdidit</h1>");
+
+if (isset($_POST['action'])) {
     $charname = $_POST['charpick'];
-    $_SESSION['charname'] = $charname;	 
-    header('location: sheet.php');
-  }
+    $_SESSION['charname'] = $charname;
+    heading('location: sheet.php');
+}
 
 /*
 //showing property

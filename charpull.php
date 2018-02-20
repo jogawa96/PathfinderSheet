@@ -22,7 +22,7 @@ echo "<input name=\"pickchar\" type=\"submit\" value=\"ChooseCharacter\"/></div>
 
   // PICK A CHARACTER FROM HOME PAGE
   if (isset($_POST['pickchar'])){
-
+      echo("<h1>youdidit</h1>");
     $charname = $_POST['charpick'];
     $_SESSION['charname'] = $charname;	 
     header('location: sheet.php');

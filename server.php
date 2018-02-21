@@ -110,9 +110,9 @@ if (isset($_POST['create'])) {
    $_SESSION['constitutionraw'] = $constitutionraw;
    $_SESSION['dexterityraw'] = $dexterityraw;
       
-    $query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
+    $new_character_query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                 VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
-    mysqli_query($db, $query);
+    mysqli_query($db, $new_character_query);
     header('location: sheet.php?charnames='.$charname);
     
 }

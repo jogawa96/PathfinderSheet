@@ -113,3 +113,4 @@
 		</div>
 	</div>
 </form>
+<a href="logout.php"> Logout </a>

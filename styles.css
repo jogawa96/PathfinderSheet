@@ -271,3 +271,11 @@ img.mainimage {
 p.mainpage{
 	text-align: center;
 }
+
+
+a
+{
+	text-decoration: none;
+	color: wheat;
+	text-shadow: 0.3vw 0.3vw 0.2vw white;
+}

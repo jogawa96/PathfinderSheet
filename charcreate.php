@@ -70,7 +70,7 @@
 		</div>
     </form>
 </div>
-	<footer><form method="post" action="charcreate.php"><div class="input-group"><button name="logout_user" class="btn"> Logout </button> </div></form></footer>
+	<footer><a href="logout.php">Logout</a></footer>
 
 </body>
 </html>

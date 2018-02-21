@@ -32,7 +32,7 @@
 	<!-- trying to pull this user's characters from the database-->
 
 
-	<form method="post" action="index.php">
+	<form method="post" action="">
     <!-- VALIDATION ERRORS -->
     <?php include('errors.php'); ?>
 	<h3> Base Character Design </h3>

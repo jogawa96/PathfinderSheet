@@ -112,6 +112,7 @@ if (isset($_POST['create'])) {
       
     $new_character_query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                 VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
+    error_log("Calling query...".PHP_EOL.var_export(debug_backtrace(),1));
     mysqli_query($db, $new_character_query);
     header('location: sheet.php?charnames='.$charname);
     

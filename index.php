@@ -35,7 +35,8 @@
 
 	<footer>
 	<button onclick="location.href='charcreate.php'" type="button">Create New Character</button>
-	<form method="post" action="index.php"><div class="input-group"><button name="logout_user" class="btn"> Logout </button> </div></form>
+
+		<a href="logout.php">Logout</a>
 	</footer>
 
 </body>

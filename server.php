@@ -81,12 +81,6 @@ if (isset($_POST['login_user'])) {
   }
 }
 
-// LOG OUT USER
-if (isset($_POST['logout_user'])) {
-  unset($_SESSION['username']);
-  header('location: login.php');
-}
-
 // CREATE A CHARACTER AND SET BASE STATS ! 
 
 if (isset($_POST['create'])) {

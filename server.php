@@ -81,6 +81,14 @@ if (isset($_POST['login_user'])) {
   }
 }
 
+// SELECT A CHARACTER
+  
+if (isset($_POST['charpick'])) {
+  $charname = $_POST['charpick'];
+  $_SESSION['character'] = $charname;
+  heading('Location: sheet.php');
+}
+
 // CREATE A CHARACTER AND SET BASE STATS ! 
 
 if (isset($_POST['create'])) {

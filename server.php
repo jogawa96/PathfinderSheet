@@ -83,9 +83,10 @@ if (isset($_POST['login_user'])) {
 
 // SELECT A CHARACTER
   
-if (isset($_POST['charpick'])) {
-  $charname = $_POST['charpick'];
+if (isset($_GET['charpick'])) {
+  $charname = $_GET['charpick'];
   $_SESSION['character'] = $charname;
+  
   heading('Location: sheet.php');
 }
 

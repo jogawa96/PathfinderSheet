@@ -6,9 +6,8 @@ session_start();
   // CHOOSE CHARACTER
   if (isset($_POST['charpick'])) {
     $charname = $_POST['charpick'];
-    $_SESSION['charname'] = $charname;
+    $_SESSION['character'] = $charname;
     heading('Location: sheet.php');
-    exit;
 }
 
 ?>

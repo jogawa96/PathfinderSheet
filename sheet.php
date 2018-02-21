@@ -9,6 +9,7 @@
 
 	<body>
 
+		<?php include 'setchar.php';?>
 		<?php include 'nav.php';?>
 		<?php include 'sticky.php';?>
 

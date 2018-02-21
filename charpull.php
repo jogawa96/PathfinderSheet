@@ -13,9 +13,9 @@ $all_property = array();
 
 $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['username']}'");
 
-echo "<div class=\"container\"><form type=\"POST\" action=\"charset.php\"><h1>Characters</h1>";
+echo "<div class=\"container\"><form method=\"POST\" action=\"charset.php\"><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
-  echo "<input type=\"submit\" name=\"charpick\" value=\"<?php echo $charnames; ?>\"/>";
+  echo "<input type=\"submit\" name=\"charpick\" value=\"$charnames\"/>";
 }
 echo "</div>";
 

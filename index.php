@@ -31,12 +31,11 @@
 
 	<!-- trying to pull this user's characters from the database-->
 	<?php include 'charpull.php' ?>
-
-
-	<footer>
+	
 	<button onclick="location.href='charcreate.php'" type="button">Create New Character</button>
 
-		<a href="logout.php">Logout</a>
+	<footer>
+	<a href="logout.php">Logout</a>
 	</footer>
 
 </body>

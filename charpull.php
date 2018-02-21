@@ -24,6 +24,7 @@ echo "</div>";
     $charname = $_POST['charpick'];
     $_SESSION['charname'] = $charname;
     heading('location: sheet.php');
+    exit;
 }
 
 ?>

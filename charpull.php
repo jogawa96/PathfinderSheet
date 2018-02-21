@@ -15,8 +15,7 @@ $rows=$db->query("SELECT char_name FROM characters WHERE username='{$_SESSION['u
 
 echo "<div class=\"container\"><h1>Characters</h1>";
 while(list($charnames)=$rows->fetch_row()){
-  echo "<input type=\"button\" value=\"$charnames\" onClick=\"location.href=\http://natural20.com/PathfinderSheet/sheet.php?var=<?php echo $charnames ?>\">;
-";}
+  echo "<input type=\"button\" value=\"$charnames\" onClick=\"location.href=\http://natural20.com/PathfinderSheet/sheet.php?var=<?php echo $charnames ?>\">$charname</input>";}
 echo "</div>";
 
 ?>

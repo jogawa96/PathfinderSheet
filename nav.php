@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <nav>
 	<ul>
 		<li class="tab"><a href="sheet.php">Home</a></li>

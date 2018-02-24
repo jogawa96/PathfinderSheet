@@ -95,22 +95,15 @@ if (isset($_GET['charpick'])) {
 if (isset($_POST['create'])) {
 
   $_SESSION['character'] = mysqli_real_escape_string($db, $_POST['charname']);
-   $charismaraw = mysqli_real_escape_string($db, $_POST['charismaraw']);
-   $wisdomraw = mysqli_real_escape_string($db, $_POST['wisdomraw']);
-   $intelraw = mysqli_real_escape_string($db, $_POST['intelraw']);
-   $strengthraw = mysqli_real_escape_string($db, $_POST['strengthraw']);
-   $constitutionraw = mysqli_real_escape_string($db, $_POST['constitutionraw']);
-   $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
-   
-   $_SESSION['strengthraw'] = $strengthraw;
-   $_SESSION['charismaraw'] = $charismaraw;
-   $_SESSION['wisdomraw'] = $wisdomraw;
-   $_SESSION['intelraw'] = $intelraw;
-   $_SESSION['constitutionraw'] = $constitutionraw;
-   $_SESSION['dexterityraw'] = $dexterityraw;
+  $_SESSION['charismaraw'] = mysqli_real_escape_string($db, $_POST['charismaraw']);
+  $_SESSION['wisdomraw'] = mysqli_real_escape_string($db, $_POST['wisdomraw']);
+  $_SESSION['intelraw'] = mysqli_real_escape_string($db, $_POST['intelraw']);
+  $_SESSION['strengthraw'] = mysqli_real_escape_string($db, $_POST['strengthraw']);
+  $_SESSION['constitutionraw'] = mysqli_real_escape_string($db, $_POST['constitutionraw']);
+  $_SESSION['dexterityraw'] = mysqli_real_escape_string($db, $_POST['dexterityraw']);
       
     $new_character_query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
-                VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
+                VALUES('{$_SESSION[username]}' , '{$_SESSION[charname]}', '{$_SESSION[charismaraw]}', '{$_SESSION[wisdomraw]}', '{$_SESSION[intelraw]}', '{$_SESSION[strengthraw]}', '{$_SESSION[constitutionraw]}', '{$_SESSION[dexterityraw')";
     error_log("Calling query...".PHP_EOL.var_export(debug_backtrace(),1));
     mysqli_query($db, $new_character_query);
     header('location: sheet.php?charnames='.$charname);

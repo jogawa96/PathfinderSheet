@@ -3,6 +3,12 @@ require_once "../config.php";
 
 session_start();
 
+  /* CREATING FUNCTIONS TO CLEAN UP THE CODE */
+
+  function checkFirst($value){
+    return mysqli_real_escape_string($db, $_POST[$value]);
+  }
+
 // initializing variables
 $username = "";
 $email    = "";
@@ -144,9 +150,5 @@ if (isset($_POST['create'])) {
   
 
 
-  /* CREATING FUNCTIONS TO CLEAN UP THE CODE ABOVE? */
 
-  function checkFirst($value){
-    return mysqli_real_escape_string($db, $_POST[$value]);
-  }
   ?>

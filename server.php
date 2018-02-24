@@ -94,7 +94,7 @@ if (isset($_GET['charpick'])) {
 
 if (isset($_POST['create'])) {
 
-   $charname = mysqli_real_escape_string($db, $_POST['charname']);
+   $charname = checkFirst('charname');
    $charismaraw = mysqli_real_escape_string($db, $_POST['charismaraw']);
    $wisdomraw = mysqli_real_escape_string($db, $_POST['wisdomraw']);
    $intelraw = mysqli_real_escape_string($db, $_POST['intelraw']);
@@ -143,4 +143,10 @@ if (isset($_POST['create'])) {
   }
   
 
+
+  /* CREATING FUNCTIONS TO CLEAN UP THE CODE ABOVE? */
+
+  function checkFirst($value){
+    return mysqli_real_escape_string($db, $_POST[$value]);
+  }
   ?>

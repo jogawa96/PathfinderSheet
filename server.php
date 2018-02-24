@@ -3,12 +3,6 @@ require_once "../config.php";
 
 session_start();
 
-  /* CREATING FUNCTIONS TO CLEAN UP THE CODE */
-
-  function checkFirst($value){
-    return mysqli_real_escape_string($db, $_POST[$value]);
-  }
-
 // initializing variables
 $username = "";
 $email    = "";
@@ -100,7 +94,7 @@ if (isset($_GET['charpick'])) {
 
 if (isset($_POST['create'])) {
 
-   $charname = checkFirst('charname');
+  $_SESSION['character'] = mysqli_real_escape_string($db, $_POST['charname']);
    $charismaraw = mysqli_real_escape_string($db, $_POST['charismaraw']);
    $wisdomraw = mysqli_real_escape_string($db, $_POST['wisdomraw']);
    $intelraw = mysqli_real_escape_string($db, $_POST['intelraw']);
@@ -109,7 +103,6 @@ if (isset($_POST['create'])) {
    $dexterityraw = mysqli_real_escape_string($db, $_POST['dexterityraw']);
    
    $_SESSION['strengthraw'] = $strengthraw;
-   $_SESSION['character'] = $charname;
    $_SESSION['charismaraw'] = $charismaraw;
    $_SESSION['wisdomraw'] = $wisdomraw;
    $_SESSION['intelraw'] = $intelraw;

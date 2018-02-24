@@ -8,7 +8,7 @@ require_once "../config.php";
 			</div>
 			<div class="info">
 				<label>Class + Level</label>
-				<input type="text" name="charlevel" value="<?php echo $_SESSION['charlvl']; ?>">
+				<input type="text" name="charlvl" value="<?php echo $_SESSION['charlvl']; ?>">
 			</div>
 			<div class="info">
 				<label>Race</label>

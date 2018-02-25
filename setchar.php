@@ -20,14 +20,14 @@ $_SESSION['constitutionraw']=intval($row[3]);
 $_SESSION['wisdomraw']=intval($row[4]);
 $_SESSION['dexterityraw']=intval($row[5]);
 $_SESSION['charlvl']=intval($row[6]);
-$_SESSION['charrace']=intval($row[7]);
-$_SESSION['charsize']=intval($row[8]);
-$_SESSION['charalign']=intval($row[9]);
-$_SESSION['chargender']=intval($row[10]);
+$_SESSION['charrace']=($row[7]);
+$_SESSION['charsize']=($row[8]);
+$_SESSION['charalign']=($row[9]);
+$_SESSION['chargender']=($row[10]);
 $_SESSION['charage']=intval($row[11]);
 $_SESSION['charheight']=intval($row[12]);
-$_SESSION['charhair']=intval($row[13]);
-$_SESSION['chareyes']=intval($row[14]);
+$_SESSION['charhair']=($row[13]);
+$_SESSION['chareyes']=($row[14]);
 
 }
 ?>

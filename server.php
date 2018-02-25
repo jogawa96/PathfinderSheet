@@ -110,7 +110,7 @@ if (isset($_POST['create'])) {
    $_SESSION['constitutionraw'] = $constitutionraw;
    $_SESSION['dexterityraw'] = $dexterityraw;
       
-    $new_character_query = "INSERT INTO `characters` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
+    $new_character_query = "INSERT INTO `charactersdata` (`username`, `char_name`, `charisma_raw`, `wisdom_raw`, `intel_raw`, `strength_raw`, `constitution_raw`, `dexterity_raw`) 
                 VALUES('{$_SESSION[username]}' , '$charname', '$charismaraw', '$wisdomraw', '$intelraw', '$strengthraw', '$constitutionraw', '$dexterityraw')";
     error_log("Calling query...".PHP_EOL.var_export(debug_backtrace(),1));
     mysqli_query($db, $new_character_query);
@@ -144,7 +144,7 @@ if (isset($_POST['create'])) {
 	   $username = $_SESSION['username'];
 
      
-	  $query = "UPDATE `characters` SET `char_level`='$charlvl',`char_race`='$charrace',`char_size`='$charsize',`char_alignment`='$charalign',
+	  $query = "UPDATE `charactersdata` SET `char_level`='$charlvl',`char_race`='$charrace',`char_size`='$charsize',`char_alignment`='$charalign',
 	  `char_gender`='$chargender',`char_age`='$charage',`char_height`='$charheight',`char_hair`='$charhair',`char_eye`='$chareyes' 
     WHERE `char_name`='$charname' AND `username`='$username'";
     

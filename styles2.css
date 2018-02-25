@@ -82,6 +82,10 @@ body div#exp-bar div{
 	position: relative;
 }
 
+body div#exp-bar{
+	text-align: center;
+}
+
 #exp-bar > div
 {
 	box-shadow: 10px 10px 10px black;

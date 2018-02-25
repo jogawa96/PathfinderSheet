@@ -113,4 +113,5 @@
 		</div>
 	</div>
 </form>
+<?php include "experienceBar.php";?>
 <a href="logout.php"> Logout </a>

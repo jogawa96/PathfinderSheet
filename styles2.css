@@ -75,3 +75,46 @@ body#login
 {
 	line-height: 3.4;
 }
+
+/* STYLES FOR EXP BAR */
+
+body div#exp-bar div{
+	position: relative;
+}
+
+#exp-bar > div
+{
+	box-shadow: 10px 10px 10px black;
+}
+body  div#exp-bar div p#exp-max {
+	float: left;
+	color: red;
+	text-align: center;
+	background-color: red;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1vw;
+	width: 50%;
+	border-top: 0.15vw ridge black;
+	border-bottom: 0.15vw ridge black;
+	border-right: 0.15vw ridge black;
+	box-shadow: 0.1vw 0.1vw 3px grey;
+}
+
+body div#exp-bar div p#exp-earned{
+	float: left;
+	color: white;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1vw;
+	background-color: green;
+	width: 50%;
+	border-top: 0.15vw ridge black;
+	border-bottom: 0.15vw ridge black;
+	border-left: 0.15vw ridge black;
+	box-shadow: 0.1vw 0.1vw 3px grey;
+}
+
+body div#exp-bar::after 
+{
+	content: "";
+}

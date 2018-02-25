@@ -80,6 +80,7 @@ body#login
 
 body div#exp-bar div{
 	position: relative;
+	margin-left: 2vw;
 }
 
 body div#exp-bar{

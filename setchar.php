@@ -9,7 +9,7 @@ $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if(!empty($_GET)){
 $_SESSION['character'] = $_GET['charnames'];
 $get_character_info = "SELECT charisma_raw, strength_raw, intel_raw, constitution_raw, wisdom_raw, dexterity_raw,
-                        char_level, char_race, char_size, char_alignment, char_gender, char_age, char_height
+                        char_level, char_race, char_size, char_alignment, char_gender, char_age, char_height,
                         char_hair, char_eye FROM charactersdata WHERE char_name='{$_SESSION['character']}' AND username='{$_SESSION['username']}'";
 $test = mysqli_query($db, $get_character_info);
 $row=$test->fetch_array();

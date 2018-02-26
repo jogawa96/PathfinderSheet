@@ -148,9 +148,6 @@ if (isset($_POST['create'])) {
 	  `char_gender`='$chargender',`char_age`='$charage',`char_height`='$charheight',`char_hair`='$charhair',`char_eye`='$chareyes' 
     WHERE `char_name`='$charname' AND `username`='$username'";
     
-      //$query = "INSERT INTO `characters` (`username`, `char_name`) VALUES ('{$_SESSION[username]}', '$charname')";
-//      $query = "UDPATE `characters` SET `char_level`=$charlvl WHERE `char_name`='Varus' AND `username`='testing'";
-     // $query = "UPDATE `characters` SET `char_level`='$charlvl' WHERE `char_name`='$charname' AND `username`='$username'";
       mysqli_query($db, $query);
       header('location: sheet.php');  
   }
